@@ -17,6 +17,7 @@
     "require": {
         "composer/installers": "^1.2",
         "drupal/admin_toolbar": "^2.4",
+        "drupal/backup_migrate": "^4.1",
         "drupal/better_exposed_filters": "^5.0@beta",
         "drupal/block_field": "^1.0@RC",
         "drupal/commerce": "^2.21",
