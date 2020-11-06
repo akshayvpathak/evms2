@@ -1,0 +1,57 @@
+{% if is_mobile %}
+<div{{ attributes.addClass('variation-block-mobile') }}>
+  <a href="{{product_url}}">
+      <div class="offer-price">
+       {{- product_variation.field_discount_percentage -}}
+      </div>
+      <div class="product-variation-image text-center">
+        {{- product_variation.field_image -}}
+      </div>
+      <div class="row container">
+        <div class="product-variation-price">
+          {{- product_variation.price -}}
+        </div>
+        <div class="product-variation-old-price">
+          <del> {{- product_variation.field_old_price -}} </del>
+        </div>
+      </div>
+      <div class="product-variation-title">
+          {{-product_variation.title -}}
+       </div>
+       <div class="product-variation-quantity">
+       {{-product_variation.attribute_available_in -}}
+       </div>
+          {{- product_variation|without('title','price','field_image','field_old_price','attribute_available_in','field_discount_percentage') -}}  
+  </a>
+</div>
+{% else %}
+<div{{ attributes.addClass('variation-block') }}>
+  <a href="{{product_url}}">
+      <div class="offer-price">
+       {{- product_variation.field_discount_percentage -}}
+      </div>
+      <div class="product-variation-image text-center">
+        {{- product_variation.field_image -}}
+      </div>
+      <div class="product-variation-title">
+       {{-product_variation.title -}}
+       </div>
+       <div class="product-variation-quantity">
+       {{-product_variation.attribute_available_in -}}
+       </div>
+      <div class="row price-block">
+        <div class="col-5">
+          <div class="row product-variation-price">
+            {{- product_variation.price -}}
+          </div>
+          <div class="row product-variation-old-price">
+            <del> {{- product_variation.field_old_price -}} </del>
+          </div>
+        </div>
+        <div class="col-7">
+          {{- product_variation|without('title','price','field_image','field_old_price','attribute_available_in','field_discount_percentage') -}}
+        </div>
+      </div>     
+  </a>
+</div>
+{% endif %}

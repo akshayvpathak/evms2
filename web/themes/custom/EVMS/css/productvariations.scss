@@ -1,0 +1,110 @@
+$extrahighlightedtextDesk: 24px;
+$highlightedtextDesk : 18px;
+$normaltextDesk: 16px;
+$smalltextDesk: 14px;
+$extrasmalltextDesk: 12px;
+$highlightedweightDesk: 580;
+$redborder : #E96125;
+$offertext: #51AA1B;
+$darkcharcoal: #333333;
+$dimgray: #666666;
+$darkgray: #999999;
+@mixin zero-margin($pad-up-dn,$pad-left-right) {
+  margin: 0px auto;
+  padding: $pad-up-dn $pad-left-right;
+}
+@mixin fontsize($fontsize,$fontweight) {
+  font-size: $fontsize;
+  font-weight: $fontweight;
+}
+.row-category-page{
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #eee;
+  //box-shadow: 0 1px 1px rgba(0,0,0,.15), -1px 0 0 rgba(0,0,0,.03), 1px 0 0 rgba(0,0,0,.03), 0 1px 0 rgba(0,0,0,.12);
+  margin: 0;
+}
+.row-content{
+  padding: 0px;
+}
+.variation-block{
+  a{
+    text-decoration: none;
+    &:hover ,&:focus ,&:visited{
+      text-decoration: none;
+    }
+  }
+  padding: 10px;
+  &:hover{
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
+    .product-variation-image{
+      img{
+        transform: translateY(-3px);
+        transition-duration: 0.4s;
+        transition-property: -webkit-transform,transform;
+      }
+    }
+  }
+  .offer-price{
+    display: inline-block;
+    @include fontsize($smalltextDesk,$highlightedweightDesk);
+    background-color: $offertext;
+    color: white;
+    z-index: 1;
+    padding: 2px 5px ;
+    border: 1px solid $offertext;
+    border-radius: 3px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  .product-variation-image{
+    margin-top: 35px;
+    margin-bottom: 10px;
+    img{
+      &:hover{
+        transform: translateY(-3px);
+        transition-duration: 0.4s;
+        transition-property: -webkit-transform,transform;
+      }
+    }
+  }
+  .product-variation-title{
+    height: 38px;
+    color: $dimgray;
+    font-size: $normaltextDesk;
+  }
+  .product-variation-quantity{
+    color: $darkgray;
+    font-size: $smalltextDesk;
+    margin-top: 20px;
+  }
+  .price-block{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .product-variation-price{
+    @include fontsize($normaltextDesk,$highlightedweightDesk );
+    color: $darkcharcoal;
+    margin: 0 auto;
+  }
+  .product-variation-old-price{
+    @include fontsize($smalltextDesk,200 );
+    color: $darkgray;
+    margin: 0 auto;
+  }
+  .button--add-to-cart{
+    color: $redborder;
+    background-color: #fff;
+    border: 1px solid $redborder;
+    border-radius: 64px;
+    font-size: $smalltextDesk;
+    text-align: center;
+    padding: 10px 20px;
+    &:hover{
+      background-color: $redborder;
+      color: #fff;
+    }  
+  }
+}

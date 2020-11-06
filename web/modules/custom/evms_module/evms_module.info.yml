@@ -1,0 +1,5 @@
+name: EVMS module
+type: module
+description: EVMS module for custom functionality
+package: EVMS
+core_version_requirement: ^8 || ^9

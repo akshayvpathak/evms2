@@ -1,0 +1,33 @@
+name: EVMS
+type: theme
+description: 'A flexible theme, with many regions and a responsive, mobile-first layout.'
+core: 8.x
+core_version_requirement: ^8 || ^9
+base theme: false
+
+libraries:
+  - evms/base
+  - evms/font-awesome
+  - evms/slick-product
+regions:
+  site_branding: 'Site Branding'
+  product_search: 'Product Search'
+  cart_block: 'Cart Block'
+  account_block: 'Account Block'
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  highlighted: Highlighted
+  featured_top: 'Featured top'
+  breadcrumb: Breadcrumb
+  content: Content
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  featured_first: 'Featured First'
+  featured_second: 'Featured Second'
+  footer_categories: 'Footer Categories'
+  footer_brands: 'Footer Brand'
+  footer_useful_links: 'Footer Useful Links'
+  footer_follow_us: 'Footer Follow Us'
+  footer_powered_by: 'Footer Powered By'

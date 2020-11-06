@@ -1,0 +1,99 @@
+$offertext: #51AA1B;
+$extrahighlightedtextDesk: 24px;
+$highlightedtextDesk : 18px;
+$normaltextDesk: 16px;
+$smalltextDesk: 14px;
+$extrasmalltextDesk: 12px;
+$highlightedweightDesk: 580;
+$redborder : #E96125;
+$darkcharcoal: #333333;
+$dimgray: #666666;
+$darkgray: #999999;
+$brightblue: #37A3BE;
+@mixin zero-margin($pad-up-dn,$pad-left-right) {
+  margin: 0px auto;
+  padding: $pad-up-dn $pad-left-right;
+}
+@mixin fontsize($fontsize,$fontweight) {
+  font-size: $fontsize;
+  font-weight: $fontweight;
+}
+.commerce-product--full{
+  .product-name{
+   font-size: $highlightedtextDesk;
+  }
+  .product-mrp{
+    .product-old-price{
+      div{
+      display: inline;
+      }   
+    }    
+  }
+  .selling-mrp{
+    .product-price{
+      @include fontsize($extrahighlightedtextDesk,$highlightedweightDesk);
+      div{
+      display: inline;
+      }
+    }
+  }
+  .tax-text{
+    font-size: $extrasmalltextDesk;
+  }
+  .available-variations{
+    .product--rendered-attribute label.option{
+      border: 1px solid $darkcharcoal;
+      border-radius: 3px;
+      padding: 8px 12px 8px 12px ;
+      margin: 12px 16px 12px 0;
+      font-size: $normaltextDesk;
+    }
+    .product--rendered-attribute__selected ~ label.option{
+      border: 1px solid $redborder;
+      border-radius: 3px;
+      color: $redborder;
+      font-size: $normaltextDesk;
+    }
+    legend{
+      margin: 0 auto;
+      font-size: $smalltextDesk;
+      color: $dimgray;
+    }
+  }
+
+  .product-detail{
+    .product-detail-title{
+      @include fontsize($highlightedtextDesk,$highlightedweightDesk );
+    }
+    .field__label{
+      color: $darkcharcoal;
+      @include fontsize($smalltextDesk,$highlightedweightDesk);
+
+    }
+    .field__item{
+      color: $dimgray;
+      @include fontsize($smalltextDesk,200);
+    }
+    .viewless, .viewmore{
+      color: $redborder; 
+      font-size: $normaltextDesk;
+      text-align: center;
+      &:hover ,&:focus{
+        color: $redborder; 
+      }
+    }
+  }
+    .promise-title{
+      @include fontsize($normaltextDesk,$highlightedweightDesk);
+      color: $brightblue;
+      .promise-text{
+        font-size: $smalltextDesk;
+      }
+    }
+    .promise{
+      .promise-header{
+        @include fontsize($highlightedtextDesk,$highlightedweightDesk );
+      }
+    }
+    
+}

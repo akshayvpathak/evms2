@@ -1,0 +1,133 @@
+body.toolbar-fixed.toolbar-tray-open .cart-offcanvas {
+   padding-top: 0px; 
+}
+.cart_header{
+  background-color: black;
+  color: white;
+  position: relative;
+  min-height: 60px;
+  align-items: center;
+}
+.close_button{
+  position: absolute;
+  right: 0px;
+  button{
+    background-color: #000;
+    border: none;
+  }
+}
+.sub_total{
+  position: relative;
+  min-height: 50px;
+  background-color: #fff;
+  align-items: center;
+  .amount{
+    position: absolute;
+    right: 10px;;
+  }
+}
+
+.cart_items{
+  position: relative;
+  .row{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .discount_percentage{
+    display: inline-block;
+    font-size: 12px;
+    padding: 2px;
+    border: 1px solid #51AA1B;
+    color: #51AA1B;
+    background-color: #fff;
+    border-radius: 3px;
+  }
+  .remove_button{
+    background-color: #fff;
+    padding: 0px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: none;
+  }
+  .title{
+    color: #666666;
+    font-size: 13px;
+  }
+  .priceblock{
+    align-items: center;
+    .price{
+      color: #666666;
+      font-size: 12px;
+      margin-left: 10px;
+    }
+    .old_price{
+      color: #999999;
+      font-size: 12px;
+      margin-left: 2px;
+    }
+    input{
+      width: 40px;
+      border: 1px solid #51AA1B;
+      border-radius: 3px;
+      &:hover,&:focus{
+        border: 1px solid #51AA1B;
+      }
+    }
+    .total_price{
+      font-size: 13px;
+      font-weight: 500;
+      color: #666666;
+      position: absolute;
+      right: 0px;
+    }
+
+  }
+}
+.cart_table{
+  .table_row{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
+}
+#cart-offcanvas{
+  background-color: #eeeeee;
+}
+.checkout{
+  margin-top: 10px;
+  width: 100%;
+  .checkout_button{
+    width: 100%;
+    color: #fff;
+    background-color: #e96125;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 14px 16px;
+    border: 1px solid #e96125;
+    cursor: pointer;
+  }
+}
+.visit_cart, .update_cart{
+    color: #fff;
+    background-color: #e96125;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 7px 8px;
+    border: 1px solid #e96125;
+    cursor: pointer;
+    text-align: center;
+}
+.extra_button{
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+.my-custom-scrollbar {
+  position: relative;
+  height: 400px;
+  overflow: auto;
+  }
+  .table-wrapper-scroll-y {
+  display: block;
+  }

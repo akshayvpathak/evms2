@@ -1,0 +1,24 @@
+base:
+  version: VERSION
+  js:
+    vendor/bootstrap/js/bootstrap.bundle.min.js: {}
+    vendor/slick/slick.min.js: {}
+    js/scripts.min.js: {}
+  css:
+    theme:
+      css/custom.bootstrap.min.css: {}
+      css/styles.min.css: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+font-awesome:
+  version: 4.7.0
+  css:
+    theme:
+      vendor/font-awesome/css/font-awesome.min.css: {}
+slick-product:
+  version: VERSION
+  css:
+    theme:
+      css/slick-product.min.css: {}

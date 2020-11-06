@@ -1,0 +1,19 @@
+<div class="container">
+<div class="cart--cart-offcanvas">
+  <div class="row cart_header">
+  <div>My Cart</div>
+   <div class="cart--cart-offcanvas__close close_button">
+    <button type="button" class="btn btn-dark"><span class="fa fa-times" style="color:white"></span> <span class="visually-hidden"> {{ 'Close cart'|t }}</span> </button>
+  </div>
+  </div>
+<% if (count > 0) { %>
+  <div class="cart-block--offcanvas-contents">
+    <div class="cart-block--offcanvas-contents__inner">
+      <div class="cart-block--offcanvas-contents__items"></div>
+    </div>
+  </div>
+<% } else { %>
+  <div>{{ 'Your cart is empty'|t }}</div>
+<% } %>
+</div>
+</div>

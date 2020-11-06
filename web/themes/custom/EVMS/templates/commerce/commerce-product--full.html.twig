@@ -1,0 +1,100 @@
+{#
+  /**
+   * @file
+   *
+   * Default product template.
+   *
+   * Available variables:
+   * - attributes: HTML attributes for the wrapper.
+   * - product: The rendered product fields.
+   *   Use 'product' to print them all, or print a subset such as
+   *   'product.title'. Use the following code to exclude the
+   *   printing of a given field:
+   *   @code
+   *   {{ product|without('title') }}
+   *   @endcode
+   * - product_entity: The product entity.
+   * - product_url: The product URL.
+   *
+   * @ingroup themeable
+   */
+  #}
+  {%
+    set classes = [
+    'commerce-product',
+    'commerce-product--' ~ product_entity.bundle|clean_class,
+    'commerce-product--full',
+  ]
+  %}
+  <article{{ attributes.addClass(classes) }}>
+    <div class="row">
+      <div class="col-md-6">
+        {{- product.field_images -}}
+      </div>
+      <div class="col-md-6">
+        <div class="offer-text bg-evms-offer border border-evms-offer rounded d-inline-block text-uppercase text-white px-2 py-1 font-weight-normal text-center">
+        {{- product.variation_field_discount_percentage -}}
+        </div>
+        <div class="product-name text-darkcharcoal font-weight-bold my-2">
+            {{- product.title -}}
+        </div>
+        <div class="product-mrp text-darkgray">
+          Product MRP:
+          <div class="product-old-price d-inline text-dimgray pl-2">
+            <del>{{- product.variation_field_old_price -}}</del>
+          </div>
+        </div>
+        <div class="selling-mrp text-darkcharcoal">
+          Selling Price : 
+          <div class="product-price d-inline pl-2">{{- product.variation_price -}}</div>
+        </div>
+        <p class="tax-text text-darkgray">(inclusive of all taxes)</p>
+        <div class="available-variations">
+          {{- product.variations -}}
+        </div>
+      </div>
+    </div>
+    <div class="row product-detail">
+        <div class="col-md-6">
+          <p class="product-detail-title text-darkcharcoal my-3">Product Details</p>
+          {{- product.field_key_features -}}
+          <center>
+          <a class="viewmore" role="button">View More  <span><i class="fa fa-angle-down"></i></span></a>
+          </center>
+          <div class= "productfeatures">
+          {{- product|without('field_images','variation_field_old_price','field_key_features','variations','field_image','variation_attributes','variation_price','variation_field_image','variation_title','variation_field_discount_percentage') -}}
+          </div>
+          <center>
+          <a class="viewless" role="button">
+          View Less <span><i class="fa fa-angle-up"></i></span>
+          </a>  
+          </center>
+        </div>
+        <div class="col-md-6 promise">
+        <div class="promise-header text-darkcharcoal my-3">
+        Why shop from Us?
+        </div>
+          <div class="row mt-2">
+            <div class="col-1">
+            <img src="../../themes/custom/evms/img/image1.webp" height="34px" width="34px"/>
+            </div>
+            <div class="col-11 promise-title">
+            Easy returns & refunds<p class="promise-text text-darkcharcoal">
+            Return products at doorstep and get refund in seconds.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+            <img  src="../../themes/custom/evms/img/image1.webp" height="34px" width="34px"/>
+            </div>
+            <div class="col-11 promise-title">
+            Lowest price guaranteed
+            <p class="promise-text text-darkcharcoal">Get difference refunded if you find it cheaper anywhere else.</p>
+            </div>
+          </div>
+        </div>
+          
+    </div>  
+  </article>
+  
+  
