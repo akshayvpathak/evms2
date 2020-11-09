@@ -1,54 +1,54 @@
 {% if is_mobile %}
-<div{{ attributes.addClass('variation-block-mobile') }}>
+<div{{ attributes.addClass('variation-block-mobile').addClass('px-2').addClass('position-relative').addClass('m-2') }}>
   <a href="{{product_url}}">
-      <div class="offer-price">
+      <div class="offer-price d-inline-block position-absolute bg-evms-offer text-white border border-evms-offer rounded">
        {{- product_variation.field_discount_percentage -}}
       </div>
-      <div class="product-variation-image text-center">
+      <div class="product-variation-image  text-center pt-4 pb-2">
         {{- product_variation.field_image -}}
       </div>
       <div class="row container">
-        <div class="product-variation-price">
+        <div class="product-variation-price text-darkcharcoal">
           {{- product_variation.price -}}
         </div>
-        <div class="product-variation-old-price">
+        <div class="product-variation-old-price text-darkgray">
           <del> {{- product_variation.field_old_price -}} </del>
         </div>
       </div>
-      <div class="product-variation-title">
+      <div class="product-variation-title text-dimgray">
           {{-product_variation.title -}}
        </div>
-       <div class="product-variation-quantity">
+       <div class="product-variation-quantity text-darkgray">
        {{-product_variation.attribute_available_in -}}
        </div>
           {{- product_variation|without('title','price','field_image','field_old_price','attribute_available_in','field_discount_percentage') -}}  
   </a>
 </div>
 {% else %}
-<div{{ attributes.addClass('variation-block') }}>
+<div{{ attributes.addClass('variation-block').addClass('px-2') }}>
   <a href="{{product_url}}">
-      <div class="offer-price">
+      <div class="offer-price d-inline-block position-absolute bg-evms-offer text-white border border-evms-offer rounded">
        {{- product_variation.field_discount_percentage -}}
       </div>
-      <div class="product-variation-image text-center">
+      <div class="product-variation-image text-center pt-5 pb-2">
         {{- product_variation.field_image -}}
       </div>
-      <div class="product-variation-title">
+      <div class="product-variation-title text-dimgray">
        {{-product_variation.title -}}
        </div>
-       <div class="product-variation-quantity">
+       <div class="product-variation-quantity text-darkgray">
        {{-product_variation.attribute_available_in -}}
        </div>
       <div class="row price-block">
-        <div class="col-5">
-          <div class="row product-variation-price">
+        <div class="col-4">
+          <div class="row product-variation-price text-darkcharcoal my-0 mx-auto">
             {{- product_variation.price -}}
           </div>
-          <div class="row product-variation-old-price">
+          <div class="row product-variation-old-price my-0 mx-auto text-darkgray">
             <del> {{- product_variation.field_old_price -}} </del>
           </div>
         </div>
-        <div class="col-7">
+        <div class="col-8">
           {{- product_variation|without('title','price','field_image','field_old_price','attribute_available_in','field_discount_percentage') -}}
         </div>
       </div>     

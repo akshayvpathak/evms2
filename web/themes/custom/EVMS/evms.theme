@@ -3,6 +3,7 @@
  * @file
  * Functions to support theming in the EVSM theme.
  */
+require_once('Mobile_Detect.php');
 use Drupal\Core\Template\Attribute;
 use Drupal\Core\Link;
 use Drupal\Component\Utility\Html;
@@ -219,8 +220,8 @@ function evms_theme_suggestions_input_alter(array &$suggestions, array $variable
 function evms_preprocess_page(&$variables) {
 
   $content_width = 'col';
-  $sidebar_first_width = 'col-md-4';
-  $sidebar_second_width = 'col-md-4';
+  $sidebar_first_width = 'col-md-3';
+  $sidebar_second_width = 'col-md-3';
 
   // Define default classes for containers.
   $variables['navbar_top_attributes'] = [
@@ -257,4 +258,26 @@ function evms_preprocess_page(&$variables) {
 /*Product Carousel*/
 function evms_preprocess_paragraph__product_carousel(&$variables){
   $variables['attributes']['class'][] = 'product-carousel';
+}
+/*Product Variation  */
+function evms_preprocess_commerce_product_variation__product_variaton_teaser(&$variables){
+  $detect = new Mobile_Detect;
+  $is_mobile = $detect->isMobile();
+  $variables['is_mobile'] = $is_mobile;
+}
+function evms_form_alter(&$form, &$form_state, $form_id) {
+  $detect = new Mobile_Detect;
+  $is_mobile = $detect->isMobile();
+  if(isset($form['#attributes']['class']) && in_array('commerce-order-item-variation-cart-form-form', $form['#attributes']['class']) && $is_mobile==1){
+    $form['actions']['submit']['#value'] = t('ADD');
+  }
+}
+function evms_preprocess_paragraph__banner(&$variables){
+  $variables['attributes']['class'][] = 'slick-banner';
+  $variables['attributes']['class'][] = 'bg-white';
+}
+function evms_preprocess_paragraph__categories(&$variables){
+  $variables['attributes']['class'][] = 'slick-categories';
+  $variables['attributes']['class'][] = 'text-center';
+  $variables['attributes']['class'][] = 'bg-white';
 }

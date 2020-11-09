@@ -1,5 +1,18 @@
+$redcolor : #E96125;
 body.toolbar-fixed.toolbar-tray-open .cart-offcanvas {
    padding-top: 0px; 
+}
+.cart-block--summary{
+  a{
+    text-decoration: none;
+    &:hover,&:focus{
+      text-decoration: none;
+    }
+  }
+  #lblCartCount {
+    font-size: 12px;
+    font-weight: 500;;
+  }
 }
 .cart_header{
   background-color: black;
@@ -10,7 +23,7 @@ body.toolbar-fixed.toolbar-tray-open .cart-offcanvas {
 }
 .close_button{
   position: absolute;
-  right: 0px;
+  right: 10px;
   button{
     background-color: #000;
     border: none;
@@ -19,7 +32,6 @@ body.toolbar-fixed.toolbar-tray-open .cart-offcanvas {
 .sub_total{
   position: relative;
   min-height: 50px;
-  background-color: #fff;
   align-items: center;
   .amount{
     position: absolute;
@@ -28,22 +40,10 @@ body.toolbar-fixed.toolbar-tray-open .cart-offcanvas {
 }
 
 .cart_items{
-  position: relative;
-  .row{
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
   .discount_percentage{
-    display: inline-block;
     font-size: 12px;
-    padding: 2px;
-    border: 1px solid #51AA1B;
-    color: #51AA1B;
-    background-color: #fff;
-    border-radius: 3px;
   }
   .remove_button{
-    background-color: #fff;
     padding: 0px;
     position: absolute;
     top: 0px;
@@ -51,20 +51,15 @@ body.toolbar-fixed.toolbar-tray-open .cart-offcanvas {
     border: none;
   }
   .title{
-    color: #666666;
     font-size: 13px;
   }
   .priceblock{
     align-items: center;
     .price{
-      color: #666666;
       font-size: 12px;
-      margin-left: 10px;
     }
     .old_price{
-      color: #999999;
       font-size: 12px;
-      margin-left: 2px;
     }
     input{
       width: 40px;
@@ -77,46 +72,13 @@ body.toolbar-fixed.toolbar-tray-open .cart-offcanvas {
     .total_price{
       font-size: 13px;
       font-weight: 500;
-      color: #666666;
-      position: absolute;
       right: 0px;
     }
 
   }
 }
-.cart_table{
-  .table_row{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: #fff;
-  }
-}
 #cart-offcanvas{
   background-color: #eeeeee;
-}
-.checkout{
-  margin-top: 10px;
-  width: 100%;
-  .checkout_button{
-    width: 100%;
-    color: #fff;
-    background-color: #e96125;
-    border-radius: 3px;
-    font-size: 14px;
-    padding: 14px 16px;
-    border: 1px solid #e96125;
-    cursor: pointer;
-  }
-}
-.visit_cart, .update_cart{
-    color: #fff;
-    background-color: #e96125;
-    border-radius: 3px;
-    font-size: 14px;
-    padding: 7px 8px;
-    border: 1px solid #e96125;
-    cursor: pointer;
-    text-align: center;
 }
 .extra_button{
   align-items: center;
@@ -131,3 +93,36 @@ body.toolbar-fixed.toolbar-tray-open .cart-offcanvas {
   .table-wrapper-scroll-y {
   display: block;
   }
+.cart_bottom{
+  bottom: 10px;
+  .checkout{
+    .button{
+      height: 40px;
+    }
+  }
+}
+@media only screen  and (min-width: 0px) and (max-width: 575px){
+.cart-offcanvas--right{
+  width: 23em;
+}
+}
+@media only screen and (min-width: 576px) and (max-width: 767px){
+  .cart-offcanvas--right{
+    width: 24em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .cart-offcanvas--right{
+    width: 24em;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+  .cart-offcanvas--right{
+    width: 27em;
+  }
+}
+@media only screen and (min-width: 1201px){
+  .cart-offcanvas--right{
+    width: 27em;
+  }
+}

@@ -11,7 +11,8 @@ module.exports = function(grunt)
         files: {
           'css/styles.css' : 'css/styles.scss',
           'css/custom.bootstrap.css' : 'css/custom.bootstrap.scss',
-          'css/slick-product.css': 'css/slick-product.scss'
+          'css/slick-product.css': 'css/slick-product.scss',
+          'css/slick-banner.css': 'css/slick-banner.scss'
         }
       }
     },
@@ -118,6 +119,10 @@ module.exports = function(grunt)
       slick_product: {
         src: 'css/slick-product.css',
 				dest: 'css/slick-product.min.css'
+      },
+      slick_banner: {
+        src: 'css/slick-banner.css',
+				dest: 'css/slick-banner.min.css'
       }
 
     },

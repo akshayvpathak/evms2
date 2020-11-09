@@ -1,0 +1,37 @@
+@import "variables";
+
+.frontpage > div{
+  margin: 10px auto;
+  background-color: #ffffff;
+}
+div.slick-categories{
+  background-color: #ffffff;
+}
+.more-link{
+  a{
+    color: $evms-offer;
+    text-decoration: none;
+    &:hover,&:focus{
+      color: $evms-offer;
+      text-decoration: none;
+    }
+  }
+}
+.site-branding{
+  a{
+    color: black;
+    text-decoration: none;
+    &:hover,&:focus{
+      color: black;
+      text-decoration: none;
+    }
+  }
+}
+.slick-categories{
+  .slick-list{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+}

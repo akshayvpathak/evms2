@@ -22,3 +22,8 @@ slick-product:
   css:
     theme:
       css/slick-product.min.css: {}
+slick-banner:
+  version: VERSION
+  css:
+    theme:
+      css/slick-banner.min.css: {}

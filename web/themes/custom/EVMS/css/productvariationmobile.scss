@@ -17,15 +17,9 @@ $darkgray: #999999;
   font-size: $fontsize;
   font-weight: $fontweight;
 }
-.variation-block{
-  a{
-    text-decoration: none;
-    &:hover ,&:focus ,&:visited{
-      text-decoration: none;
-    }
-  }
+.variation-block-mobile{
+  box-shadow: rgb(221, 221, 221) 0px 0px 10px;
   &:hover{
-   border: 1px solid #ccc;
     .product-variation-image{
       img{
         transform: translateY(-3px);
@@ -34,52 +28,45 @@ $darkgray: #999999;
       }
     }
   }
+  a{
+    text-decoration: none;
+    &:hover,&:focus,&:visited{
+      text-decoration: none;
+    }
+  }
   .offer-price{
     @include fontsize($smalltextDesk,$highlightedweightDesk);
-    z-index: 1;
     padding: 2px 5px ;
+    z-index: 1;
     top: 10px;
     left: 10px;
   }
-  .product-variation-image{
-    img{
-      &:hover{
-        transform: translateY(-3px);
-        transition-duration: 0.4s;
-        transition-property: -webkit-transform,transform;
-      }
-    }
-  }
-  .product-variation-title{
-    height: 38px;
-    font-size: $normaltextDesk;
-  }
-  .product-variation-quantity{
-    font-size: $smalltextDesk;
-    margin-top: 20px;
-  }
-  .price-block{
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
   .product-variation-price{
     @include fontsize($normaltextDesk,$highlightedweightDesk );
-    color: $darkcharcoal;
   }
   .product-variation-old-price{
     @include fontsize($smalltextDesk,200 );
   }
-  .button--add-to-cart{
-    color: $redborder;
-    background-color: #fff;
-    border: 1px solid $redborder;
-    border-radius: 64px;
+  .product-variation-title{
+    height: 44px;
+    font-size: $normaltextDesk;
+  }
+  .product-variation-quantity{
     font-size: $smalltextDesk;
-    text-align: center;
-    padding: 10px 20px;
-    &:hover{
-      background-color: $redborder;
-      color: #fff;
-    }  
+  }
+  .button--add-to-cart{
+    width: 100%;
+    &:focus{
+      outline: none;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .variation-block-mobile{
+    .product-variation-title{
+      height: 34px;
+      font-size: $extrasmalltextDesk;
+      overflow: hidden;
+    }
   }
 }

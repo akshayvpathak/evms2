@@ -1,0 +1,23 @@
+<div{{ attributes.addClass('variation-summary') }}>
+  <div class="row">
+    <div class="col-3 my-auto">
+     <div class="product-variation-image text-center">
+        {{- product_variation.field_image -}}
+      </div>
+    </div>
+    <div class="col-9">
+    <div class="offer-price">
+       {{- product_variation.field_discount_percentage -}}
+      </div>
+       <div class="product-variation-title">
+          {{-product_variation.title -}}
+       </div>
+        <div class="product-variation-quantity">
+       {{-product_variation.attribute_available_in -}}
+       </div>
+        <div class="product-variation-price">
+          {{- product_variation.price -}}
+        </div>
+    </div>
+  </div>
+</div>
