@@ -1,0 +1,22 @@
+uuid: 515ff4e2-5369-4bc7-b6a8-1f0a6ef34ec6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - evms
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: evms_content
+theme: evms
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

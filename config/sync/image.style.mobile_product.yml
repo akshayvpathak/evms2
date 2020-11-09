@@ -1,0 +1,15 @@
+uuid: 21653008-19c8-47fa-868a-70d2a36c9305
+langcode: en
+status: true
+dependencies: {  }
+name: mobile_product
+label: 'Mobile Product'
+effects:
+  1b66f298-b172-4d16-9373-8619c048836b:
+    uuid: 1b66f298-b172-4d16-9373-8619c048836b
+    id: image_scale
+    weight: 1
+    data:
+      width: 200
+      height: 200
+      upscale: true

@@ -1,0 +1,12 @@
+uuid: 03d3f93d-5300-4f5a-abf4-5fd5859f9d33
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_order
+_core:
+  default_config_hash: hI6zHs0P9XxjpjIYYZxrfjMIf2F5sOACOkwiyD6zRp0
+id: commerce_order.checkout
+label: Checkout
+targetEntityType: commerce_order
+cache: true

@@ -1,0 +1,30 @@
+uuid: 36ee4415-e2b4-4056-8712-ae0909c3248e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.product_image_media.field_media_image
+    - media.type.product_image_media
+    - responsive_image.styles.product_images
+  module:
+    - responsive_image
+id: media.product_image_media.default
+targetEntityType: media
+bundle: product_image_media
+mode: default
+content:
+  field_media_image:
+    label: visually_hidden
+    weight: 0
+    settings:
+      responsive_image_style: product_images
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+hidden:
+  created: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

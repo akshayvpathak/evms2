@@ -1,0 +1,15 @@
+uuid: 90577521-65ca-4975-9cd7-c5608424aa4e
+langcode: en
+status: true
+dependencies: {  }
+name: desktop_product
+label: 'Desktop Product'
+effects:
+  b0c35cd6-4ced-480d-987e-79f43aea903f:
+    uuid: b0c35cd6-4ced-480d-987e-79f43aea903f
+    id: image_scale
+    weight: 1
+    data:
+      width: 285
+      height: 285
+      upscale: true

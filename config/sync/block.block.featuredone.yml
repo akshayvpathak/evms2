@@ -1,0 +1,25 @@
+uuid: 59c7c3d9-9ae9-4b0a-8bb0-914561bf5fb6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4bbe7727-80b8-4dfc-bc6e-b7965ba94cb9'
+  module:
+    - block_content
+  theme:
+    - evms
+id: featuredone
+theme: evms
+region: featured_first
+weight: 0
+provider: null
+plugin: 'block_content:4bbe7727-80b8-4dfc-bc6e-b7965ba94cb9'
+settings:
+  id: 'block_content:4bbe7727-80b8-4dfc-bc6e-b7965ba94cb9'
+  label: 'Featured One'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

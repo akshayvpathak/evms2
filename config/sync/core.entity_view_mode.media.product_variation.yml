@@ -1,0 +1,10 @@
+uuid: 995687bb-1fce-4da7-b92a-685ce2032430
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.product_variation
+label: 'Product Variation'
+targetEntityType: media
+cache: true

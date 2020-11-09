@@ -1,0 +1,107 @@
+uuid: 9691fd20-32e6-4453-b03a-4f1d50290137
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.grocery_type
+    - field.field.commerce_product.grocery_type.field_brand
+    - field.field.commerce_product.grocery_type.field_category
+    - field.field.commerce_product.grocery_type.field_description
+    - field.field.commerce_product.grocery_type.field_disclaimer
+    - field.field.commerce_product.grocery_type.field_images
+    - field.field.commerce_product.grocery_type.field_key_features
+    - field.field.commerce_product.grocery_type.field_marketed_by
+    - field.field.commerce_product.grocery_type.field_seller
+    - field.field.commerce_product.grocery_type.field_shelf_life
+    - field.field.commerce_product.grocery_type.field_unit
+  module:
+    - commerce_product
+    - entity_reference_revisions
+    - physical
+    - text
+id: commerce_product.grocery_type.default
+targetEntityType: commerce_product
+bundle: grocery_type
+mode: default
+content:
+  field_description:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_disclaimer:
+    weight: 9
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_images:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_key_features:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_marketed_by:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_seller:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_shelf_life:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_unit:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: physical_measurement_default
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  variations:
+    type: commerce_add_to_cart
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      combine: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_brand: true
+  field_category: true
+  search_api_excerpt: true
+  stores: true
+  uid: true

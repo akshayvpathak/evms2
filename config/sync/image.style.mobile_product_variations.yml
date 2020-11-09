@@ -1,0 +1,15 @@
+uuid: 15d1aaf2-e10b-4c93-aedd-476b244ee901
+langcode: en
+status: true
+dependencies: {  }
+name: mobile_product_variations
+label: 'Mobile Product Variations'
+effects:
+  f24c3fc1-2a09-4752-9a8a-6b08b176dba1:
+    uuid: f24c3fc1-2a09-4752-9a8a-6b08b176dba1
+    id: image_scale
+    weight: 1
+    data:
+      width: 140
+      height: 140
+      upscale: true

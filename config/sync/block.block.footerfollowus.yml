@@ -1,0 +1,25 @@
+uuid: cdb27432-a3bb-46e3-9b98-b270e83e6aa5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:16fe2b89-1d7c-4c31-bbcc-b8285e90ea21'
+  module:
+    - block_content
+  theme:
+    - evms
+id: footerfollowus
+theme: evms
+region: footer_follow_us
+weight: 0
+provider: null
+plugin: 'block_content:16fe2b89-1d7c-4c31-bbcc-b8285e90ea21'
+settings:
+  id: 'block_content:16fe2b89-1d7c-4c31-bbcc-b8285e90ea21'
+  label: 'Footer Follow Us'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

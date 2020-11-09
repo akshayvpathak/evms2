@@ -1,0 +1,24 @@
+uuid: fcc70bc0-a1b6-4363-bedc-bf9b93c8c0a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.product_carousel.field_product_images
+    - paragraphs.paragraphs_type.product_carousel
+  module:
+    - media_library
+id: paragraph.product_carousel.default
+targetEntityType: paragraph
+bundle: product_carousel
+mode: default
+content:
+  field_product_images:
+    type: media_library_widget
+    weight: 0
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

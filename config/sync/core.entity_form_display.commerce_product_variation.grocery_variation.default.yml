@@ -1,0 +1,79 @@
+uuid: c59e0b29-0ddc-4aa0-ba8d-94e48f1b399a
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.grocery_variation
+    - field.field.commerce_product_variation.grocery_variation.attribute_available_in
+    - field.field.commerce_product_variation.grocery_variation.field_discount_percentage
+    - field.field.commerce_product_variation.grocery_variation.field_image
+    - field.field.commerce_product_variation.grocery_variation.field_old_price
+  module:
+    - commerce_price
+    - media_library
+    - text
+id: commerce_product_variation.grocery_variation.default
+targetEntityType: commerce_product_variation
+bundle: grocery_variation
+mode: default
+content:
+  attribute_available_in:
+    type: options_select
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_discount_percentage:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_image:
+    type: media_library_widget
+    weight: 2
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_old_price:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: commerce_price_default
+    region: content
+  price:
+    type: commerce_price_default
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sku:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 7
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  list_price: true
+  uid: true

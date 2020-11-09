@@ -1,0 +1,21 @@
+uuid: 1c292372-1f44-4091-90cd-29838730e09c
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.grocery_type
+    - field.storage.commerce_product.field_key_features
+  module:
+    - text
+id: commerce_product.grocery_type.field_key_features
+field_name: field_key_features
+entity_type: commerce_product
+bundle: grocery_type
+label: 'Key Features'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

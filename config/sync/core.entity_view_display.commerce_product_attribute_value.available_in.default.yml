@@ -1,0 +1,24 @@
+uuid: 67c3646e-89d6-4a89-b2dd-36b18e6b6358
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_attribute.available_in
+    - field.field.commerce_product_attribute_value.available_in.field_weight
+  module:
+    - physical
+id: commerce_product_attribute_value.available_in.default
+targetEntityType: commerce_product_attribute_value
+bundle: available_in
+mode: default
+content:
+  field_weight:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: physical_measurement_default
+    region: content
+hidden:
+  name: true
+  search_api_excerpt: true

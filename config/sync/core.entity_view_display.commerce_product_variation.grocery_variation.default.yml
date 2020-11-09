@@ -1,0 +1,52 @@
+uuid: 1beeec48-5e07-4233-8f6d-4ab56312c1cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.grocery_variation
+    - field.field.commerce_product_variation.grocery_variation.attribute_available_in
+    - field.field.commerce_product_variation.grocery_variation.field_discount_percentage
+    - field.field.commerce_product_variation.grocery_variation.field_image
+    - field.field.commerce_product_variation.grocery_variation.field_old_price
+  module:
+    - commerce_price
+    - text
+id: commerce_product_variation.grocery_variation.default
+targetEntityType: commerce_product_variation
+bundle: grocery_variation
+mode: default
+content:
+  field_discount_percentage:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_old_price:
+    weight: 2
+    label: hidden
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+    type: commerce_price_default
+    region: content
+  price:
+    label: hidden
+    type: commerce_price_default
+    weight: 1
+    region: content
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+hidden:
+  attribute_available_in: true
+  commerce_variation_cart_form: true
+  field_image: true
+  list_price: true
+  product_id: true
+  search_api_excerpt: true
+  sku: true
+  title: true

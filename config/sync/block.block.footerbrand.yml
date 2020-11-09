@@ -1,0 +1,25 @@
+uuid: bc96d683-a26b-4668-9956-a5096e35201a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a29f8aee-567a-4e78-8d5e-2ecc0a8aa06e'
+  module:
+    - block_content
+  theme:
+    - evms
+id: footerbrand
+theme: evms
+region: footer_brands
+weight: 0
+provider: null
+plugin: 'block_content:a29f8aee-567a-4e78-8d5e-2ecc0a8aa06e'
+settings:
+  id: 'block_content:a29f8aee-567a-4e78-8d5e-2ecc0a8aa06e'
+  label: 'Footer Brand'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

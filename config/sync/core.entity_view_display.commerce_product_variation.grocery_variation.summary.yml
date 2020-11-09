@@ -1,0 +1,75 @@
+uuid: 663b751b-a1a0-4341-b816-ce2ef26e4c02
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.grocery_variation
+    - core.entity_view_mode.commerce_product_variation.summary
+    - field.field.commerce_product_variation.grocery_variation.attribute_available_in
+    - field.field.commerce_product_variation.grocery_variation.field_discount_percentage
+    - field.field.commerce_product_variation.grocery_variation.field_image
+    - field.field.commerce_product_variation.grocery_variation.field_old_price
+  module:
+    - commerce_price
+    - text
+id: commerce_product_variation.grocery_variation.summary
+targetEntityType: commerce_product_variation
+bundle: grocery_variation
+mode: summary
+content:
+  attribute_available_in:
+    type: entity_reference_label
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_discount_percentage:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_old_price:
+    weight: 5
+    label: hidden
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+    type: commerce_price_default
+    region: content
+  price:
+    label: hidden
+    type: commerce_price_default
+    weight: 4
+    region: content
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+  title:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  commerce_variation_cart_form: true
+  list_price: true
+  product_id: true
+  search_api_excerpt: true
+  sku: true

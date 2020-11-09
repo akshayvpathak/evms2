@@ -1,0 +1,31 @@
+uuid: 3c4f0b9f-87e3-43d6-8d36-e5cd306dea68
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.product_variation
+    - field.field.media.product_image_media.field_media_image
+    - media.type.product_image_media
+    - responsive_image.styles.product_variatons_images
+  module:
+    - responsive_image
+id: media.product_image_media.product_variation
+targetEntityType: media
+bundle: product_image_media
+mode: product_variation
+content:
+  field_media_image:
+    label: visually_hidden
+    weight: 0
+    settings:
+      responsive_image_style: product_variatons_images
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+hidden:
+  created: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

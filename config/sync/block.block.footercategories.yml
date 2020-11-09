@@ -1,0 +1,25 @@
+uuid: b9b13487-cf25-4d38-b963-666367ee90a2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c8e71092-a88e-431f-9361-41a1f440c40a'
+  module:
+    - block_content
+  theme:
+    - evms
+id: footercategories
+theme: evms
+region: footer_categories
+weight: 0
+provider: null
+plugin: 'block_content:c8e71092-a88e-431f-9361-41a1f440c40a'
+settings:
+  id: 'block_content:c8e71092-a88e-431f-9361-41a1f440c40a'
+  label: 'Footer Categories'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

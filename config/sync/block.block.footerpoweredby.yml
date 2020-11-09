@@ -1,0 +1,25 @@
+uuid: 1f4801d9-c37a-44b3-a454-b962e312a7cd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:68979022-f632-45ca-a303-8f3656e09b70'
+  module:
+    - block_content
+  theme:
+    - evms
+id: footerpoweredby
+theme: evms
+region: footer_powered_by
+weight: 0
+provider: null
+plugin: 'block_content:68979022-f632-45ca-a303-8f3656e09b70'
+settings:
+  id: 'block_content:68979022-f632-45ca-a303-8f3656e09b70'
+  label: 'Footer Powered By'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

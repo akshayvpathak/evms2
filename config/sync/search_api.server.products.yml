@@ -1,0 +1,14 @@
+uuid: 27da65b9-17e3-480e-829e-b00aec79c9b2
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: products
+name: Products
+description: 'Product Database Server'
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 1
+  matching: words

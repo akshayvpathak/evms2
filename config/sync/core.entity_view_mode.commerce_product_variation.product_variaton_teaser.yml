@@ -1,0 +1,10 @@
+uuid: 2c28cf60-6321-442b-bb3d-316b30687174
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product_variation.product_variaton_teaser
+label: 'Product variaton teaser'
+targetEntityType: commerce_product_variation
+cache: true

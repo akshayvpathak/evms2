@@ -1,0 +1,78 @@
+<?php
+/**
+ * @file
+ * Custom functions for Views Bootstrap.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\views_evms\ViewsEvms;
+use Drupal\Core\Template\Attribute;
+/**
+ * Implements hook_theme().
+ */
+/**
+ * setting variable ID
+ */
+$id = "NA";
+$arrow = true;
+$dots = true;
+$variablewidth = true;
+$speed = 2000;
+$infinite = true;
+static $count = 0;
+function views_evms_theme() {
+  return ViewsEvms::getThemeHooks();
+}
+/**
+ * Implement template_preprocess();
+ */
+function template_preprocess_views_evms_carousel(array &$vars) {
+  global $count;
+  $count++;
+ // dpm($count);
+  global $id;
+  global $arrow;
+  global $dots;
+  global $variablewidth;
+  global $speed;
+  global $infinite;
+  $view = $vars['view'];
+  $vars['id'] = ViewsEvms::getUniqueId($view);
+  $id = $vars['id'];
+  //var_dump($id);
+  $vars['attributes']['class'][] = 'views-bootstrap-media-object';
+  $vars['attributes']['class'][] = 'media-list';
+  // Carousel options.
+  $vars['arrow'] = $view->style_plugin->options['arrow'];
+  $arrow = $vars['arrow'];
+  $vars['dots'] = $view->style_plugin->options['dots'];
+  $dots = $vars['dots'];
+  $vars['variablewidth'] = $view->style_plugin->options['variablewidth'];
+  $variablewidth = $vars['variablewidth'];
+  $vars['speed'] = $view->style_plugin->options['speed'];
+  $speed = $vars['speed'];
+  $vars['infinite'] = $view->style_plugin->options['infinite'];
+  $infinite = $vars['infinite']; 
+  $vars['#attached']['library'][] = 'views_evms/components';
+  $vars['#attached']['library'][] = 'evms/slick-banner';
+  if($count == 1)
+  {
+    $vars['#attached']['drupalSettings']['slick_var_id'] = $id;
+    $vars['#attached']['drupalSettings']['slick_var_arrow'] = $arrow;
+    $vars['#attached']['drupalSettings']['slick_var_dots'] = $dots;
+    $vars['#attached']['drupalSettings']['slick_var_variablewidth'] = $variablewidth;
+    $vars['#attached']['drupalSettings']['slick_var_speed'] = $speed;
+    $vars['#attached']['drupalSettings']['slick_var_infinite'] = $infinite;
+  }
+  elseif($count == 2)
+  {
+    $vars['#attached']['drupalSettings']['slick_var_id2'] = $id;
+    $vars['#attached']['drupalSettings']['slick_var_arrow2'] = $arrow;
+    $vars['#attached']['drupalSettings']['slick_var_dots2'] = $dots;
+    $vars['#attached']['drupalSettings']['slick_var_variablewidth2'] = $variablewidth;
+    $vars['#attached']['drupalSettings']['slick_var_speed2'] = $speed;
+    $vars['#attached']['drupalSettings']['slick_var_infinite2'] = $infinite;
+  }
+  $vars['#attached']['drupalSettings']['slick_var_count'] = $count;
+  
+}

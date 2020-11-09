@@ -1,0 +1,25 @@
+uuid: 37b79997-6b88-47af-acfe-7b3f63f9828a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2e09dc0c-2d6e-4e53-b7d2-fd42e7050c47'
+  module:
+    - block_content
+  theme:
+    - evms
+id: footerusefullinks
+theme: evms
+region: footer_useful_links
+weight: 0
+provider: null
+plugin: 'block_content:2e09dc0c-2d6e-4e53-b7d2-fd42e7050c47'
+settings:
+  id: 'block_content:2e09dc0c-2d6e-4e53-b7d2-fd42e7050c47'
+  label: 'Footer Usefullinks'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

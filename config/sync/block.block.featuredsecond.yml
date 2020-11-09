@@ -1,0 +1,25 @@
+uuid: cbbafbe3-8497-49f1-8c64-8f548b0c2fa9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:034f40d5-4666-44d6-890c-a735b30d3887'
+  module:
+    - block_content
+  theme:
+    - evms
+id: featuredsecond
+theme: evms
+region: featured_second
+weight: 0
+provider: null
+plugin: 'block_content:034f40d5-4666-44d6-890c-a735b30d3887'
+settings:
+  id: 'block_content:034f40d5-4666-44d6-890c-a735b30d3887'
+  label: 'Featured Second'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

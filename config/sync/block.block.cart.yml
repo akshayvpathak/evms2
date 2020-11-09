@@ -1,0 +1,21 @@
+uuid: e11ec72a-12ba-4ae7-a912-ffa7c96a0073
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_cart
+  theme:
+    - evms
+id: cart
+theme: evms
+region: cart_block
+weight: 0
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: Cart
+  provider: commerce_cart
+  label_display: '0'
+  dropdown: true
+visibility: {  }

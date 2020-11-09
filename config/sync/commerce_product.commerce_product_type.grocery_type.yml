@@ -1,0 +1,12 @@
+uuid: e2366c6e-34ee-4a9a-b1e7-0eea52b52a81
+langcode: en
+status: true
+dependencies: {  }
+id: grocery_type
+label: 'Grocery Type'
+description: ''
+variationType: grocery_variation
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

@@ -1,0 +1,93 @@
+uuid: 220eab93-e7ba-46ed-ba33-730c52892549
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.commerce_product.field_brand
+    - field.storage.commerce_product.field_category
+    - search_api.server.products
+  module:
+    - commerce_product
+    - search_api
+id: products
+name: Products
+description: ''
+read_only: false
+field_settings:
+  field_brand:
+    label: 'Product Brand'
+    datasource_id: 'entity:commerce_product_variation'
+    property_path: 'product_id:entity:field_brand'
+    type: string
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_brand
+      module:
+        - commerce_product
+  field_category:
+    label: 'Product  Category'
+    datasource_id: 'entity:commerce_product_variation'
+    property_path: 'product_id:entity:field_category'
+    type: string
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_category
+      module:
+        - commerce_product
+  title:
+    label: 'Product Variation Title'
+    datasource_id: 'entity:commerce_product_variation'
+    property_path: title
+    type: text
+    dependencies:
+      module:
+        - commerce_product
+datasource_settings:
+  'entity:commerce_product_variation':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  hierarchy:
+    fields:
+      field_brand: taxonomy_term-parent
+      field_category: taxonomy_term-parent
+    weights:
+      preprocess_index: -45
+  ignore_character:
+    all_fields: false
+    fields:
+      - title
+    ignorable: '[''¿¡!?,.:;]'
+    ignorable_classes:
+      - Pc
+      - Pd
+      - Pe
+      - Pf
+      - Pi
+      - Po
+      - Ps
+    weights:
+      preprocess_index: -10
+      preprocess_query: -10
+  ignorecase:
+    all_fields: false
+    fields:
+      - title
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: products

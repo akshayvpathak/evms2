@@ -1,0 +1,19 @@
+uuid: 58f6b774-4a61-4bd5-ad0c-7f70f608ebeb
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - text
+id: commerce_product.field_disclaimer
+field_name: field_disclaimer
+entity_type: commerce_product
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

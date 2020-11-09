@@ -1,0 +1,21 @@
+uuid: 1fc67255-b63a-4d59-a6fe-4b28e0ef66b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.grocery_variation
+    - field.storage.commerce_product_variation.field_discount_percentage
+  module:
+    - text
+id: commerce_product_variation.grocery_variation.field_discount_percentage
+field_name: field_discount_percentage
+entity_type: commerce_product_variation
+bundle: grocery_variation
+label: 'Discount Percentage'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

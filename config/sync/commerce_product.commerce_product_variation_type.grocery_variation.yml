@@ -1,0 +1,10 @@
+uuid: 1aa88601-799a-4961-8e65-51f3c815d818
+langcode: en
+status: true
+dependencies: {  }
+id: grocery_variation
+label: 'Grocery Variation'
+orderItemType: default
+generateTitle: false
+traits: {  }
+locked: false

@@ -1,0 +1,8 @@
+uuid: 0557ab94-c828-4104-ba6a-cf512066ac19
+langcode: en
+status: true
+dependencies: {  }
+name: Category
+vid: category
+description: 'Contain Product Category'
+weight: 0

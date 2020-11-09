@@ -1,0 +1,28 @@
+uuid: 04e577a3-cef6-43c1-9bdb-2738e23c02e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_product_images
+    - media.type.product_image_media
+    - paragraphs.paragraphs_type.product_carousel
+id: paragraph.product_carousel.field_product_images
+field_name: field_product_images
+entity_type: paragraph
+bundle: product_carousel
+label: 'Product Images'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      product_image_media: product_image_media
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

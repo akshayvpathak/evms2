@@ -1,0 +1,23 @@
+uuid: b9de67ea-2c30-400a-8da5-44fac4b09945
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.grocery_variation
+    - field.storage.commerce_product_variation.field_old_price
+  module:
+    - commerce_price
+id: commerce_product_variation.grocery_variation.field_old_price
+field_name: field_old_price
+entity_type: commerce_product_variation
+bundle: grocery_variation
+label: 'Old Price'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_currencies:
+    - INR
+field_type: commerce_price

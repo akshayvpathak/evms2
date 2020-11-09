@@ -1,0 +1,23 @@
+uuid: c7d5f336-a007-4008-9feb-81a6c7f554ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.product_carousel.field_product_images
+    - paragraphs.paragraphs_type.product_carousel
+id: paragraph.product_carousel.default
+targetEntityType: paragraph
+bundle: product_carousel
+mode: default
+content:
+  field_product_images:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  search_api_excerpt: true

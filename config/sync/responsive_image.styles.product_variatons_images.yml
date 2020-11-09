@@ -1,0 +1,34 @@
+uuid: 732afed1-0158-46e0-9b0a-b4d2529cb3de
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.desktop_product_variations
+    - image.style.mobile_product_variations
+  theme:
+    - evms
+id: product_variatons_images
+label: 'Product Variatons Images'
+image_style_mappings:
+  -
+    breakpoint_id: evms.extra
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: desktop_product_variations
+  -
+    breakpoint_id: evms.large
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: desktop_product_variations
+  -
+    breakpoint_id: evms.medium
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: desktop_product_variations
+  -
+    breakpoint_id: evms.small
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: mobile_product_variations
+breakpoint_group: evms
+fallback_image_style: mobile_product_variations
