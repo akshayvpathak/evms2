@@ -1,0 +1,23 @@
+uuid: 166d44aa-e55b-421a-b988-2dbc7db423f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.product_category
+  module:
+    - facets
+  theme:
+    - evms
+id: categories
+theme: evms
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:product_category'
+settings:
+  id: 'facet_block:product_category'
+  label: Categories
+  provider: facets
+  label_display: '0'
+  block_id: categories
+visibility: {  }

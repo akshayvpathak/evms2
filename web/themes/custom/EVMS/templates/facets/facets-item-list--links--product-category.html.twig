@@ -1,0 +1,89 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a facets item list.
+ *
+ * Available variables:
+ * - items: A list of items. Each item contains:
+ *   - attributes: HTML attributes to be applied to each list item.
+ *   - value: The content of the list element.
+ * - title: The title of the list.
+ * - list_type: The tag for list element ("ul" or "ol").
+ * - wrapper_attributes: HTML attributes to be applied to the list wrapper.
+ * - attributes: HTML attributes to be applied to the list.
+ * - empty: A message to display when there are no items. Allowed value is a
+ *   string or render array.
+ * - context: A list of contextual data associated with the list. May contain:
+ *   - list_style: The ID of the widget plugin this facet uses.
+ * - facet: The facet for this result item.
+ *   - id: the machine name for the facet.
+ *   - label: The facet label.
+ *
+ * @see facets_preprocess_facets_item_list()
+ *
+ * @ingroup themeable
+ */
+#}
+{% if is_mobile %}
+  {% if facet.widget.type and attributes.hasClass('facet-inactive') %}
+   <div class="evms-mobile-nav-container">
+    <div class="evms-mobile-nav">
+   {%- for item in items -%}
+         {{ item.value }}
+    {%- endfor -%}
+    </div>
+  </div>
+  {% else %}
+ {% if counter == 0 %}
+ <div class="facets-links">
+  {%- for item in items -%}
+         {{ item.value }}
+    {%- endfor -%}
+  </div>
+ {% else %}
+  <div class="evms-mobile-nav-container">
+    <div class="evms-mobile-nav">
+ {%- for item in items -%}
+         {{ item.value }}
+    {%- endfor -%}
+    </div>
+    </div>
+  {% endif %}
+  {% endif %}
+ 
+{% else %}
+    <div class=" pt-2 facets-widget- {{- facet.widget.type -}} ">
+    {% if facet.widget.type %}
+      {%- set attributes = attributes.addClass('item-list__' ~ facet.widget.type) %}
+    {% endif %}
+    {% if items or empty %}
+      {%- if title is not empty -%}
+        <h3>{{ title }}</h3>
+      {%- endif -%}
+
+      {%- if items -%}
+      {% if attributes.hasClass('facet-active') or attributes.hasClass('facet-inactive')  %}
+      <ul {{ attributes.addClass('list-unstyled','border','border-light-gray','px-2') }}>
+      {% else %}
+      <ul {{ attributes.addClass('list-unstyled','px-2') }}>
+      {% endif %}
+        
+          {%- for item in items -%}
+          {% if item.attributes.hasClass('facet-item--collapsed') %}
+          <li{{ item.attributes.addClass('py-2','border','border-light-gray','border-right-0','border-left-0') }}><span class="fa fa-plus text-evms-submit fa-sm pr-2"></span>{{ item.value }}</li>
+          {% else %}
+          <li{{ item.attributes.addClass('py-2','border','border-light-gray','border-right-0','border-left-0') }}>{{ item.value }}</li>
+          {% endif %}
+          {%- endfor -%}
+        <ul>
+      {%- else -%}
+        {{- empty -}}
+      {%- endif -%}
+    {%- endif %}
+
+  {% if facet.widget.type == "dropdown" %}
+    <label id="facet_{{ facet.id }}_label">{{ 'Facet'|t }} {{ facet.label }}</label>
+  {%- endif %}
+  </div>
+{% endif %}
+

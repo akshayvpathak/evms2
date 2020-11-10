@@ -246,6 +246,10 @@ display:
       display_extenders: {  }
       path: categories
       exposed_block: true
+      cache:
+        type: none
+      defaults:
+        cache: false
     cache_metadata:
       max-age: -1
       contexts:

@@ -281,3 +281,15 @@ function evms_preprocess_paragraph__categories(&$variables){
   $variables['attributes']['class'][] = 'text-center';
   $variables['attributes']['class'][] = 'bg-white';
 }
+function evms_preprocess_facets_item_list__links__product_category(&$variables){
+  $detect = new Mobile_Detect;
+  $is_mobile = $detect->isMobile();
+  $variables['is_mobile'] = $is_mobile;
+  static $counter = 0;
+  $variables['counter'] = $counter++;
+}
+function evms_preprocess_facets_result_item__links__product_category(&$variables){
+  $detect = new Mobile_Detect;
+  $is_mobile = $detect->isMobile();
+  $variables['is_mobile'] = $is_mobile;
+}

@@ -386,3 +386,47 @@ body.toolbar-fixed.toolbar-tray-open .cart-offcanvas {
   font-weight: 580;
   color: #333333;
   margin: 0 auto; }
+
+.page-view-categories .sidebar_first {
+  background-color: #F7F7F7F7; }
+
+.page-view-categories .main-content {
+  background-color: #F9F9F9F9; }
+
+.facets-widget-links .facet-item--expanded a.is-active {
+  font-size: 14px;
+  font-weight: 600; }
+
+.facets-widget-links a {
+  text-decoration: none;
+  color: #666666; }
+  .facets-widget-links a:hover, .facets-widget-links a:focus {
+    color: #666666;
+    text-decoration: none; }
+
+.block-facets ul ul li {
+  margin-left: 40px; }
+
+.facets-links > a {
+  display: none; }
+
+.evms-mobile-nav-container {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch; }
+
+.evms-mobile-nav {
+  margin-left: -5px;
+  margin-top: 0;
+  padding: 8px 0 0;
+  white-space: nowrap; }
+  .evms-mobile-nav a {
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 88px;
+    border: 1px solid #e96125;
+    color: #e96125;
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 10px; }
+    .evms-mobile-nav a:hover {
+      text-decoration: none; }
