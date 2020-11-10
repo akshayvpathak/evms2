@@ -5,11 +5,11 @@ dependencies: {  }
 name: mobile_product_variations
 label: 'Mobile Product Variations'
 effects:
-  f24c3fc1-2a09-4752-9a8a-6b08b176dba1:
-    uuid: f24c3fc1-2a09-4752-9a8a-6b08b176dba1
+  b2135690-f2e9-41b6-afdb-8610eb3372b5:
+    uuid: b2135690-f2e9-41b6-afdb-8610eb3372b5
     id: image_scale
     weight: 1
     data:
-      width: 140
-      height: 140
+      width: 120
+      height: 120
       upscale: true

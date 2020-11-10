@@ -5,11 +5,10 @@ dependencies: {  }
 name: mobile_banner_1
 label: 'Mobile Banner 1'
 effects:
-  7a88ce7e-1e01-4933-aa58-fc4287ceead9:
-    uuid: 7a88ce7e-1e01-4933-aa58-fc4287ceead9
-    id: image_scale
+  51b3c943-2042-43ff-9a63-e94641d5c2d2:
+    uuid: 51b3c943-2042-43ff-9a63-e94641d5c2d2
+    id: image_resize
     weight: 1
     data:
       width: 250
-      height: 300
-      upscale: true
+      height: 200
