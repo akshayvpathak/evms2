@@ -1,0 +1,25 @@
+uuid: be0c6036-711e-4908-86ad-e796389d0808
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_instamojo
+id: instamojo_payment_gateway
+label: 'Instamojo Payment Gateway'
+weight: null
+plugin: instamojo_offsite_checkout
+configuration:
+  api_key: test_66b2d5d4f1e6de6710f80f5bc28
+  auth_token: test_079d1df276621da879545e17fba
+  salt: e9107f345ec9486e837b9efd0298860a
+  order_prefix: ''
+  send_email: '1'
+  allow_repeated_payments: '1'
+  watchdog_log: '1'
+  display_label: Instamojo
+  mode: test
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+conditions: {  }
+conditionOperator: AND

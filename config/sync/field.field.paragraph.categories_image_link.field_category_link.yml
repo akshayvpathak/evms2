@@ -1,0 +1,21 @@
+uuid: c0cfde16-d09c-4992-8469-572e250fd540
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_category_link
+    - paragraphs.paragraphs_type.categories_image_link
+  module:
+    - text
+id: paragraph.categories_image_link.field_category_link
+field_name: field_category_link
+entity_type: paragraph
+bundle: categories_image_link
+label: 'Category Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

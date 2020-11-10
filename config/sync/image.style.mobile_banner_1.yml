@@ -1,0 +1,15 @@
+uuid: e3aed530-7cee-4bde-8ad8-aabd97ce0764
+langcode: en
+status: true
+dependencies: {  }
+name: mobile_banner_1
+label: 'Mobile Banner 1'
+effects:
+  7a88ce7e-1e01-4933-aa58-fc4287ceead9:
+    uuid: 7a88ce7e-1e01-4933-aa58-fc4287ceead9
+    id: image_scale
+    weight: 1
+    data:
+      width: 250
+      height: 300
+      upscale: true

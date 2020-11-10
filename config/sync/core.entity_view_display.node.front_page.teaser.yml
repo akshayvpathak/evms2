@@ -1,0 +1,27 @@
+uuid: c6142292-0725-4648-9344-66bc345e4da8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.front_page.field_banner_1
+    - field.field.node.front_page.field_categories_block
+    - field.field.node.front_page.field_top_savers_today
+    - node.type.front_page
+  module:
+    - user
+id: node.front_page.teaser
+targetEntityType: node
+bundle: front_page
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_banner_1: true
+  field_categories_block: true
+  field_top_savers_today: true
+  search_api_excerpt: true

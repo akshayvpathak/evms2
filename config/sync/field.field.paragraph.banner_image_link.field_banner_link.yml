@@ -1,0 +1,21 @@
+uuid: 7747bb8b-8fd8-4d95-954d-29c99c2e22b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_banner_link
+    - paragraphs.paragraphs_type.banner_image_link
+  module:
+    - text
+id: paragraph.banner_image_link.field_banner_link
+field_name: field_banner_link
+entity_type: paragraph
+bundle: banner_image_link
+label: 'Banner Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

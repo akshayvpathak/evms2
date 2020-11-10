@@ -1,0 +1,28 @@
+uuid: c3170328-5978-41aa-a634-76fcf73e5a5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_category_image
+    - media.type.categories_image_media
+    - paragraphs.paragraphs_type.categories_image_link
+id: paragraph.categories_image_link.field_category_image
+field_name: field_category_image
+entity_type: paragraph
+bundle: categories_image_link
+label: 'Category Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      categories_image_media: categories_image_media
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

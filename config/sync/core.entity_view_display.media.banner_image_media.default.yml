@@ -1,0 +1,30 @@
+uuid: a3976c38-817c-4881-8349-a6892298ee76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.banner_image_media.field_media_image
+    - media.type.banner_image_media
+    - responsive_image.styles.banner_1
+  module:
+    - responsive_image
+id: media.banner_image_media.default
+targetEntityType: media
+bundle: banner_image_media
+mode: default
+content:
+  field_media_image:
+    label: visually_hidden
+    weight: 0
+    settings:
+      responsive_image_style: banner_1
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+hidden:
+  created: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

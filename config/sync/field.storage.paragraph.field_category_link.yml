@@ -1,0 +1,20 @@
+uuid: ca785cc7-aba0-4809-bcd6-0668684d3a3b
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_category_link
+field_name: field_category_link
+entity_type: paragraph
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

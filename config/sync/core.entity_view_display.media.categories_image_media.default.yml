@@ -1,0 +1,30 @@
+uuid: 29de7707-0eb9-4972-8e76-1a0486926073
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.categories_image_media.field_media_image
+    - media.type.categories_image_media
+    - responsive_image.styles.categories_block_images
+  module:
+    - responsive_image
+id: media.categories_image_media.default
+targetEntityType: media
+bundle: categories_image_media
+mode: default
+content:
+  field_media_image:
+    label: visually_hidden
+    weight: 0
+    settings:
+      responsive_image_style: categories_block_images
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+hidden:
+  created: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

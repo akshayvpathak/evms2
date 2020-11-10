@@ -1,0 +1,43 @@
+uuid: 69eb6d51-c468-49b8-8938-a6a13a9a57f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_categories
+    - paragraphs.paragraphs_type.categories
+    - paragraphs.paragraphs_type.categories_image_link
+  module:
+    - entity_reference_revisions
+id: paragraph.categories.field_categories
+field_name: field_categories
+entity_type: paragraph
+bundle: categories
+label: Categories
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      categories_image_link: categories_image_link
+    target_bundles_drag_drop:
+      banner:
+        weight: 6
+        enabled: false
+      banner_image_link:
+        weight: 7
+        enabled: false
+      categories:
+        weight: 8
+        enabled: false
+      categories_image_link:
+        enabled: true
+        weight: 9
+      product_carousel:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

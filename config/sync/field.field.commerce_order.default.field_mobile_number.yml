@@ -1,0 +1,24 @@
+uuid: c0c425b4-0974-4b5d-af9a-2b25a5a8575b
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_type.default
+    - field.storage.commerce_order.field_mobile_number
+  module:
+    - mobile_number
+id: commerce_order.default.field_mobile_number
+field_name: field_mobile_number
+entity_type: commerce_order
+bundle: default
+label: 'Mobile Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  countries: {  }
+  verify: none
+  message: "Your verification code from !site_name:\n!code"
+field_type: mobile_number

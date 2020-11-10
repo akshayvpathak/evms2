@@ -1,0 +1,13 @@
+uuid: 06602375-e1fb-4452-a4ee-fc065b7f3c1e
+langcode: en
+status: true
+dependencies: {  }
+id: categories_image_media
+label: 'Categories Image Media'
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map: {  }

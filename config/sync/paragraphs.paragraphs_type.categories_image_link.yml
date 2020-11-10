@@ -1,0 +1,10 @@
+uuid: 3ddaea18-9947-47fb-980c-3f2905ef074a
+langcode: en
+status: true
+dependencies: {  }
+id: categories_image_link
+label: 'Categories Image Link'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

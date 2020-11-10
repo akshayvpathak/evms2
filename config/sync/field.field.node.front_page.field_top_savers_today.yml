@@ -1,0 +1,28 @@
+uuid: c71dc8f6-2626-492e-8892-514cf98a2481
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_top_savers_today
+    - node.type.front_page
+  module:
+    - block_field
+id: node.front_page.field_top_savers_today
+field_name: field_top_savers_today
+entity_type: node
+bundle: front_page
+label: 'Top Savers Today'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    plugin_id: 'views_block:top_savers_today-block_1'
+    settings: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids:
+      'views_block:top_savers_today-block_1': 'views_block:top_savers_today-block_1'
+field_type: block_field

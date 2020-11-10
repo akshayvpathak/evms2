@@ -86,11 +86,11 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: 'row-category-page row-content'
+          row_class: 'bg-white border border-lightgray m-0 p-0'
           default_row_class: true
           uses_fields: false
           col_xs: col-6
-          col_sm: col-sm-3
+          col_sm: col-sm-4
           col_md: col-md-3
           col_lg: col-lg-3
           col_xl: col-xl-3

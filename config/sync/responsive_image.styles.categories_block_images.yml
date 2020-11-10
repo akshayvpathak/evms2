@@ -1,0 +1,33 @@
+uuid: e4998ec5-3dc9-4ae9-909f-62d30fe7f857
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.categories_image
+  theme:
+    - evms
+id: categories_block_images
+label: 'Categories Block Images'
+image_style_mappings:
+  -
+    breakpoint_id: evms.extra
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: categories_image
+  -
+    breakpoint_id: evms.large
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: categories_image
+  -
+    breakpoint_id: evms.medium
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: categories_image
+  -
+    breakpoint_id: evms.small
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: categories_image
+breakpoint_group: evms
+fallback_image_style: categories_image

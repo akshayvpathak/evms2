@@ -1,0 +1,15 @@
+uuid: 549b60e7-fdb3-4058-9532-d97f80b37273
+langcode: en
+status: true
+dependencies: {  }
+name: desktop_bannwwe
+label: 'Desktop Banner'
+effects:
+  6421a97d-4e82-4fbe-8007-1df7de07247f:
+    uuid: 6421a97d-4e82-4fbe-8007-1df7de07247f
+    id: image_scale
+    weight: 1
+    data:
+      width: 900
+      height: 600
+      upscale: true
