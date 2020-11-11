@@ -1,0 +1,49 @@
+uuid: 2cedffcd-934e-4830-b535-209f51bbc114
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.category_header.field_categories_image
+    - field.field.paragraph.category_header.field_categories_name
+    - field.field.paragraph.category_header.field_category_description
+    - field.field.paragraph.category_header.field_category_discount
+    - paragraphs.paragraphs_type.category_header
+  module:
+    - text
+id: paragraph.category_header.default
+targetEntityType: paragraph
+bundle: category_header
+mode: default
+content:
+  field_categories_image:
+    type: entity_reference_entity_view
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: accordion_header
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_categories_name:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_category_description:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_category_discount:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  search_api_excerpt: true

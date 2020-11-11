@@ -1,0 +1,28 @@
+uuid: 2f39e1c5-2256-47ec-9d6f-d7563333bf1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_categories_image
+    - media.type.accordion_image
+    - paragraphs.paragraphs_type.category_header
+id: paragraph.category_header.field_categories_image
+field_name: field_categories_image
+entity_type: paragraph
+bundle: category_header
+label: 'Categories Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      accordion_image: accordion_image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: accordion_image
+field_type: entity_reference

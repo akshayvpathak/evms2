@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.front_page.field_banner_1
+    - field.field.node.front_page.field_categories_accordion
     - field.field.node.front_page.field_categories_block
     - field.field.node.front_page.field_top_savers_today
     - node.type.front_page
@@ -19,6 +20,15 @@ content:
   field_banner_1:
     type: entity_reference_revisions_entity_view
     weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_categories_accordion:
+    type: entity_reference_revisions_entity_view
+    weight: 3
     label: hidden
     settings:
       view_mode: default

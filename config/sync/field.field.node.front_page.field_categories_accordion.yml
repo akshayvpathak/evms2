@@ -1,0 +1,58 @@
+uuid: 18377468-9f6f-4797-bcff-705e0d7bc471
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categories_accordion
+    - node.type.front_page
+    - paragraphs.paragraphs_type.accordion
+  module:
+    - entity_reference_revisions
+id: node.front_page.field_categories_accordion
+field_name: field_categories_accordion
+entity_type: node
+bundle: front_page
+label: 'Categories Accordion'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      accordion: accordion
+    target_bundles_drag_drop:
+      accordion:
+        enabled: true
+        weight: 11
+      banner:
+        weight: 12
+        enabled: false
+      banner_image_link:
+        weight: 13
+        enabled: false
+      categories:
+        weight: 14
+        enabled: false
+      categories_image_link:
+        weight: 15
+        enabled: false
+      category_1_items:
+        weight: 16
+        enabled: false
+      category_2:
+        weight: 17
+        enabled: false
+      category_body:
+        weight: 18
+        enabled: false
+      category_header:
+        weight: 19
+        enabled: false
+      product_carousel:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,58 @@
+uuid: c8e3863e-30e6-40ad-8f15-213c692c5f1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_category_2_header
+    - paragraphs.paragraphs_type.category_2
+    - paragraphs.paragraphs_type.category_header
+  module:
+    - entity_reference_revisions
+id: paragraph.category_2.field_category_2_header
+field_name: field_category_2_header
+entity_type: paragraph
+bundle: category_2
+label: 'Category 2 Header'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      category_header: category_header
+    target_bundles_drag_drop:
+      accordion:
+        weight: 11
+        enabled: false
+      banner:
+        weight: 12
+        enabled: false
+      banner_image_link:
+        weight: 13
+        enabled: false
+      categories:
+        weight: 14
+        enabled: false
+      categories_image_link:
+        weight: 15
+        enabled: false
+      category_1_items:
+        weight: 16
+        enabled: false
+      category_2:
+        weight: 17
+        enabled: false
+      category_body:
+        weight: 18
+        enabled: false
+      category_header:
+        enabled: true
+        weight: 19
+      product_carousel:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

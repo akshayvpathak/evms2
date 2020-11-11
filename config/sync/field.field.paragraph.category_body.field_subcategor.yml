@@ -1,0 +1,21 @@
+uuid: f9bc443d-7817-497e-b57b-cb0e0c5f5cac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subcategor
+    - paragraphs.paragraphs_type.category_body
+  module:
+    - text
+id: paragraph.category_body.field_subcategor
+field_name: field_subcategor
+entity_type: paragraph
+bundle: category_body
+label: 'Subcategory Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

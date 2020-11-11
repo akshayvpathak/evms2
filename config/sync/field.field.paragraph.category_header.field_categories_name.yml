@@ -1,0 +1,21 @@
+uuid: 95c73716-98ac-4355-abf6-83a045f7bc6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_categories_name
+    - paragraphs.paragraphs_type.category_header
+  module:
+    - text
+id: paragraph.category_header.field_categories_name
+field_name: field_categories_name
+entity_type: paragraph
+bundle: category_header
+label: 'Categories name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

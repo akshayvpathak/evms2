@@ -47,6 +47,37 @@ div.slick-categories {
   margin-right: 40px;
   margin-left: 40px; }
 
+div#accordion > div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #fff; }
+
+.arrowposition {
+  top: 50%;
+  right: 0; }
+
+.category_description {
+  color: #888;
+  font-size: 13px;
+  line-height: 1.6;
+  max-height: 3.2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; }
+
+.category_discount {
+  color: #54b226;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-transform: uppercase; }
+
+.category_name {
+  color: #333333;
+  font-weight: 500; }
+
 .follow_us .fa {
   padding: 10px;
   font-size: 18px;

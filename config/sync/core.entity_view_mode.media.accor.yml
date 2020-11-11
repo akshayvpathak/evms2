@@ -1,0 +1,10 @@
+uuid: 0c873174-45da-4f2a-8bb6-4d031e3b8dac
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.accor
+label: 'Accordion Body'
+targetEntityType: media
+cache: true

@@ -1,0 +1,21 @@
+uuid: 84ec8b2e-452a-480f-b6f7-b4d99889c19c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_category_discount
+    - paragraphs.paragraphs_type.category_header
+  module:
+    - text
+id: paragraph.category_header.field_category_discount
+field_name: field_category_discount
+entity_type: paragraph
+bundle: category_header
+label: 'Category Discount'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

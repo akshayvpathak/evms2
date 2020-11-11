@@ -1,0 +1,21 @@
+uuid: b40179bc-7446-458b-8630-f6cec0a99dc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subcategory_discount
+    - paragraphs.paragraphs_type.category_body
+  module:
+    - text
+id: paragraph.category_body.field_subcategory_discount
+field_name: field_subcategory_discount
+entity_type: paragraph
+bundle: category_body
+label: 'Subcategory Discount'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

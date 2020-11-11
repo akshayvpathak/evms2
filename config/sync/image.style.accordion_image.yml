@@ -1,0 +1,15 @@
+uuid: c94af1f0-441a-4b10-9984-bc8953591263
+langcode: en
+status: true
+dependencies: {  }
+name: accordion_image
+label: 'Accordion Image'
+effects:
+  69d17471-5668-4bfe-b50d-1127a80e698a:
+    uuid: 69d17471-5668-4bfe-b50d-1127a80e698a
+    id: image_scale
+    weight: 1
+    data:
+      width: 75
+      height: 75
+      upscale: true

@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.front_page.field_banner_1
+    - field.field.node.front_page.field_categories_accordion
     - field.field.node.front_page.field_categories_block
     - field.field.node.front_page.field_top_savers_today
     - node.type.front_page
@@ -22,6 +23,7 @@ content:
     region: content
 hidden:
   field_banner_1: true
+  field_categories_accordion: true
   field_categories_block: true
   field_top_savers_today: true
   search_api_excerpt: true

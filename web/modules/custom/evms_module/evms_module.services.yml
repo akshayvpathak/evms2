@@ -1,0 +1,5 @@
+services:
+  evms_module.breadcrumb_views:
+    class: Drupal\evms_module\Breadcrumb\ViewsBreadcrumbBuilder
+    tags:
+      - { name: breadcrumb_builder, priority: 1 }

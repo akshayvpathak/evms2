@@ -293,3 +293,13 @@ function evms_preprocess_facets_result_item__links__product_category(&$variables
   $is_mobile = $detect->isMobile();
   $variables['is_mobile'] = $is_mobile;
 }
+function evms_preprocess_paragraph__accordion (&$variables){
+  $variables['attributes']['id'][] = 'accordion';
+  $variables['attributes']['class'][] = 'bg-lightgray';
+}
+function evms_preprocess_paragraph__category_1_items(&$variables){
+  $variables['attributes']['class'][] = 'accordionitem border border-evms-border border-right-0 border-left-0';
+}
+function evms_preprocess_paragraph__category_2(&$variables){
+  $variables['attributes']['class'][] = 'accordionitem border border-evms-border border-right-0 border-left-0';
+}

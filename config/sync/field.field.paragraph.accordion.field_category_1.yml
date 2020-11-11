@@ -1,0 +1,58 @@
+uuid: a330c61f-ac24-42d5-ae7c-4af2ecbc7d56
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_category_1
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.category_1_items
+  module:
+    - entity_reference_revisions
+id: paragraph.accordion.field_category_1
+field_name: field_category_1
+entity_type: paragraph
+bundle: accordion
+label: 'Category 1'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      category_1_items: category_1_items
+    target_bundles_drag_drop:
+      accordion:
+        weight: 11
+        enabled: false
+      banner:
+        weight: 12
+        enabled: false
+      banner_image_link:
+        weight: 13
+        enabled: false
+      categories:
+        weight: 14
+        enabled: false
+      categories_image_link:
+        weight: 15
+        enabled: false
+      category_1_items:
+        enabled: true
+        weight: 16
+      category_2:
+        weight: 17
+        enabled: false
+      category_body:
+        weight: 18
+        enabled: false
+      category_header:
+        weight: 19
+        enabled: false
+      product_carousel:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

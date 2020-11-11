@@ -1,0 +1,10 @@
+uuid: b23d62ed-1426-4f98-9f42-464a9ce23f79
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.accordion_header
+label: 'Accordion Header'
+targetEntityType: media
+cache: true

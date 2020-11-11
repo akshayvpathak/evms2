@@ -1,0 +1,52 @@
+uuid: 13588fda-5740-4b6e-93bc-702138c1cc62
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.category_body.field_subcategor
+    - field.field.paragraph.category_body.field_subcategory_discount
+    - field.field.paragraph.category_body.field_subcategory_image
+    - field.field.paragraph.category_body.field_subcategory_name
+    - paragraphs.paragraphs_type.category_body
+  module:
+    - media_library
+    - text
+id: paragraph.category_body.default
+targetEntityType: paragraph
+bundle: category_body
+mode: default
+content:
+  field_subcategor:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_subcategory_discount:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_subcategory_image:
+    type: media_library_widget
+    weight: 1
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_subcategory_name:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+hidden:
+  created: true
+  status: true

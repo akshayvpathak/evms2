@@ -1,0 +1,33 @@
+uuid: ceb6740c-01c5-40f0-a75d-372bc55f1e1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.accordion_image
+  theme:
+    - evms
+id: accor
+label: 'Accordion Body'
+image_style_mappings:
+  -
+    breakpoint_id: evms.extra
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: accordion_image
+  -
+    breakpoint_id: evms.large
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: accordion_image
+  -
+    breakpoint_id: evms.medium
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: accordion_image
+  -
+    breakpoint_id: evms.small
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: accordion_image
+breakpoint_group: evms
+fallback_image_style: accordion_image
