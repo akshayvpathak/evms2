@@ -28,6 +28,14 @@ div.slick-categories{
   }
 }
 .slick-categories{
+  a{
+    color: #666666;
+    text-decoration: none;
+    &:hover,&:focus,&:visited{
+      color: #666666;
+      text-decoration: none;
+    }
+  }
   .slick-list{
     padding-top: 20px;
     padding-bottom: 20px;

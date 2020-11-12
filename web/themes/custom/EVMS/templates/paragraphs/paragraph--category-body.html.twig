@@ -47,6 +47,7 @@
   ]
 %}
 {% block paragraph %}
+<a href= {{ content.field_subcategor }}>
   <div{{ attributes.addClass(classes).addClass('col-md-2 col-6 card card-body') }}>
     {% block content %}
       <div class="text-center">
@@ -60,4 +61,5 @@
     </div>
     {% endblock %}
   </div>
+</a>
 {% endblock paragraph %}

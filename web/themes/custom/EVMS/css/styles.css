@@ -41,6 +41,13 @@ div.slick-categories {
     color: black;
     text-decoration: none; }
 
+.slick-categories a {
+  color: #666666;
+  text-decoration: none; }
+  .slick-categories a:hover, .slick-categories a:focus, .slick-categories a:visited {
+    color: #666666;
+    text-decoration: none; }
+
 .slick-categories .slick-list {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -59,6 +66,13 @@ div#accordion > div {
 .arrowposition {
   top: 50%;
   right: 0; }
+
+#accordion a {
+  color: transparent;
+  text-decoration: none; }
+  #accordion a:hover, #accordion a:focus, #accordion a:visited {
+    color: transparent;
+    text-decoration: none; }
 
 .category_description {
   color: #888;
