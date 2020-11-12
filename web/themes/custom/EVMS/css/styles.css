@@ -47,6 +47,10 @@ div.slick-categories {
   margin-right: 40px;
   margin-left: 40px; }
 
+@media only screen and (min-width: 1350px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1340px; } }
+
 div#accordion > div {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -107,7 +111,7 @@ div#accordion > div {
   color: white; }
 
 .commerce-product--full .product-name {
-  font-size: 18px; }
+  font-size: 24px; }
 
 .commerce-product--full .product-mrp .product-old-price div {
   display: inline; }

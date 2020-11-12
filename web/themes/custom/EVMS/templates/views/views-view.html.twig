@@ -63,7 +63,9 @@
   {% if rows -%}
     {{ rows }}
   {% elseif empty -%}
+  <div>
     {{ empty }}
+  </div>
   {% endif %}
   {{ pager }}
 

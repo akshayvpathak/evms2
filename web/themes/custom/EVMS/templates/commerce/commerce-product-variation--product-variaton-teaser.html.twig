@@ -40,7 +40,7 @@
        {{-product_variation.attribute_available_in -}}
        </div>
       <div class="row price-block">
-        <div class="col-4">
+        <div class="col-3">
           <div class="row product-variation-price text-darkcharcoal my-0 mx-auto">
             {{- product_variation.price -}}
           </div>
@@ -48,7 +48,7 @@
             <del> {{- product_variation.field_old_price -}} </del>
           </div>
         </div>
-        <div class="col-8">
+        <div class="col-9">
           {{- product_variation|without('title','price','field_image','field_old_price','attribute_available_in','field_discount_percentage') -}}
         </div>
       </div>     

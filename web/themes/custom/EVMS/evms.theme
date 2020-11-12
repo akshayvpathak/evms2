@@ -275,11 +275,14 @@ function evms_form_alter(&$form, &$form_state, $form_id) {
 function evms_preprocess_paragraph__banner(&$variables){
   $variables['attributes']['class'][] = 'slick-banner';
   $variables['attributes']['class'][] = 'bg-white';
+  $variables['attributes']['class'][] = 'overflow-hidden';
+
 }
 function evms_preprocess_paragraph__categories(&$variables){
   $variables['attributes']['class'][] = 'slick-categories';
   $variables['attributes']['class'][] = 'text-center';
   $variables['attributes']['class'][] = 'bg-white';
+  $variables['attributes']['class'][] = 'overflow-hidden';
 }
 function evms_preprocess_facets_item_list__links__product_category(&$variables){
   $detect = new Mobile_Detect;
