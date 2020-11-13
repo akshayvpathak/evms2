@@ -6,6 +6,7 @@ dependencies:
     - facets.facet.product_category
   module:
     - facets
+    - system
   theme:
     - evms
 id: categories
@@ -20,4 +21,9 @@ settings:
   provider: facets
   label_display: '0'
   block_id: categories
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/cart\r\n/checkout/*"
+    negate: true
+    context_mapping: {  }

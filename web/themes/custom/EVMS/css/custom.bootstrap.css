@@ -1,6 +1,8 @@
 @font-face {
   font-family: Celias;
-  src: url(fonts/Celias.woff2); }
+  src: url(fonts/Celias_Regular.woff2) format("woff2"), url(fonts/Celias_Regular.woff) format("woff"), url(fonts/Celias_Regular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 500; }
 
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)

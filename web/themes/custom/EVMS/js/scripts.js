@@ -1,10 +1,14 @@
 jQuery(".viewless").hide();
+jQuery(window).on('load',function(){
+  jQuery('.loader').fadeIn(250);
+});
 jQuery(document).ready(function(){
-    jQuery(".productfeatures").hide(1000);
+  jQuery('.loader').fadeOut(250);
+  jQuery(".productfeatures").hide(1000);
   jQuery(".viewmore").click(function(){
-    jQuery(".productfeatures").show(1000);
-    jQuery(".viewless").show(1000);
-    jQuery(".viewmore").hide();
+  jQuery(".productfeatures").show(1000);
+  jQuery(".viewless").show(1000);
+  jQuery(".viewmore").hide();
   }
   );
   jQuery(".viewless").click(function(){
