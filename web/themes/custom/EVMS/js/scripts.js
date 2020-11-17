@@ -60,14 +60,14 @@ jQuery(document).ready(function(){
         breakpoint: 600,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1
+          swipeToSlide: true,
         }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1
+          swipeToSlide: true,
         }
       }
     ]

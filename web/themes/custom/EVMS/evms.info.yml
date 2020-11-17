@@ -8,6 +8,7 @@ base theme: false
 libraries:
   - evms/base
   - evms/font-awesome
+  - evms/icofont
 regions:
   site_branding: 'Site Branding'
   product_search: 'Product Search'

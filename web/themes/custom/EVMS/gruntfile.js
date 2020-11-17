@@ -81,6 +81,22 @@ module.exports = function(grunt)
             src: ['*.min.js','*.gif'],
             dest: 'vendor/slick'
           },
+          {
+            //for ico fonts
+            expand: true,
+            dot: true,
+            cwd: 'node_modules/@icon/icofont',
+            src: ['*.woff*','*.woff2','*.eot'],
+            dest: 'vendor/icofont'
+          },
+          {
+            //for ico fonts
+            expand: true,
+            dot: true,
+            cwd: 'node_modules/@icon/icofont',
+            src: ['*.css'],
+            dest: 'vendor/icofont'
+          },
         ]
       }
     },

@@ -75,7 +75,7 @@
 
 .slick-prev:before,
 .slick-next:before {
-  font-family: "FontAwesome";
+  font-family: "icofont";
   font-size: 2em;
   line-height: 1;
   color: #cccccc;
@@ -95,11 +95,11 @@
 }
 
 .slick-prev:before {
-  content: "";
+  content: "\ea6c";
 }
 
 [dir=rtl] .slick-prev:before {
-  content: "";
+  content: "\ea6c";
 }
 
 .slick-next {
@@ -112,11 +112,11 @@
 }
 
 .slick-next:before {
-  content: "";
+  content: "\ea6d";
 }
 
 [dir=rtl] .slick-next:before {
-  content: "";
+  content: "\ea6d";
 }
 
 /* Dots */
