@@ -258,6 +258,7 @@ function evms_preprocess_page(&$variables) {
 /*Product Carousel*/
 function evms_preprocess_paragraph__product_carousel(&$variables){
   $variables['attributes']['class'][] = 'product-carousel';
+  $variables['attributes']['class'][] = 'overflow-hidden';
 }
 /*Product Variation  */
 function evms_preprocess_commerce_product_variation__product_variaton_teaser(&$variables){
