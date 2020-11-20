@@ -1,6 +1,6 @@
-uuid: 698f196c-85e3-4dee-ad50-51307eadbe62
+uuid: ac05b45f-aaed-437b-9b2a-9d03ab335f31
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.categories
@@ -8,14 +8,14 @@ dependencies:
     - views
   theme:
     - evms
-id: product_search_block
+id: categories_
 theme: evms
 region: product_search
 weight: 0
 provider: null
-plugin: 'views_exposed_filter_block:categories-page_1'
+plugin: 'views_exposed_filter_block:categories-page_3'
 settings:
-  id: 'views_exposed_filter_block:categories-page_1'
+  id: 'views_exposed_filter_block:categories-page_3'
   label: ''
   provider: views
   label_display: '0'

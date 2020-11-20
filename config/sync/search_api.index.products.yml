@@ -2,13 +2,13 @@ uuid: 220eab93-e7ba-46ed-ba33-730c52892549
 langcode: en
 status: true
 dependencies:
+  module:
+    - commerce_product
+    - search_api
   config:
     - field.storage.commerce_product.field_brand
     - field.storage.commerce_product.field_category
     - search_api.server.products
-  module:
-    - commerce_product
-    - search_api
 id: products
 name: Products
 description: ''
@@ -32,6 +32,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.commerce_product.field_category
+      module:
+        - commerce_product
+  number:
+    label: 'Product Price'
+    datasource_id: 'entity:commerce_product_variation'
+    property_path: 'price:number'
+    type: decimal
+    dependencies:
       module:
         - commerce_product
   title:

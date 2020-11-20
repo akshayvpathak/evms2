@@ -1,0 +1,29 @@
+uuid: 01bfb892-e433-4f0b-9111-35288eebf8f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.categories
+  module:
+    - system
+    - views
+  theme:
+    - evms
+id: exposedformcategoriespage_2
+theme: evms
+region: breadcrumb
+weight: -9
+provider: null
+plugin: 'views_exposed_filter_block:categories-page_2'
+settings:
+  id: 'views_exposed_filter_block:categories-page_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: "/categories\r\n/categories/*"
+    negate: false
+    context_mapping: {  }

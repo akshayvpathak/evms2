@@ -6,13 +6,17 @@ dependencies:
     - search_api.index.products
     - views.view.categories
   module:
+    - facets_pretty_paths
     - search_api
+third_party_settings:
+  facets_pretty_paths:
+    coder: taxonomy_term_coder
 id: product_category
 name: Categories
-url_alias: category
+url_alias: cid
 weight: 0
 min_count: 1
-show_only_one_result: false
+show_only_one_result: true
 field_identifier: field_category
 facet_source_id: 'search_api:views_page__categories__page_1'
 widget:

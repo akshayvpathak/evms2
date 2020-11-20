@@ -12,7 +12,7 @@ dependencies:
 id: categories
 theme: evms
 region: sidebar_first
-weight: 0
+weight: -10
 provider: null
 plugin: 'facet_block:product_category'
 settings:

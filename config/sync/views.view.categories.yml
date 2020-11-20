@@ -42,7 +42,7 @@ display:
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
+          expose_sort_order: false
           sort_asc_label: Asc
           sort_desc_label: Desc
           text_input_required: ''
@@ -57,14 +57,17 @@ display:
               allow_secondary: false
               secondary_label: 'Advanced options'
               secondary_open: false
-            filter:
-              search_api_fulltext:
-                plugin_id: default
-                advanced:
-                  rewrite:
-                    filter_rewrite_values: ''
-                  collapsible: false
-                  is_secondary: false
+            sort:
+              plugin_id: default
+              advanced:
+                combine: false
+                combine_rewrite: ''
+                reset: false
+                reset_label: ''
+                collapsible: false
+                collapsible_label: 'Sort options'
+                is_secondary: false
+            filter: {  }
       pager:
         type: none
         options:
@@ -220,8 +223,8 @@ display:
           empty: true
           tokenize: false
           content:
-            value: 'No Results Found'
-            format: basic_html
+            value: '<h4>Sorry Results Not Found </h4>'
+            format: full_html
           plugin_id: text
       relationships: {  }
       arguments: {  }
@@ -248,6 +251,156 @@ display:
         type: none
       defaults:
         cache: false
+        sorts: false
+      sorts:
+        number:
+          id: number
+          table: search_api_index_products
+          field: number
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: true
+          expose:
+            label: 'Price High to Low'
+          plugin_id: search_api
+        number_1:
+          id: number_1
+          table: search_api_index_products
+          field: number
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: true
+          expose:
+            label: 'Price Low to High'
+          plugin_id: search_api
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - 'url.query_args:sort_by'
+      tags:
+        - 'config:field.storage.commerce_product.field_brand'
+        - 'config:search_api.index.products'
+  page_2:
+    display_plugin: page
+    id: page_2
+    display_title: 'Page 2'
+    position: 2
+    display_options:
+      display_extenders: {  }
+      path: categories
+      filters: {  }
+      defaults:
+        filters: false
+        filter_groups: false
+        sorts: false
+        use_ajax: false
+      filter_groups:
+        operator: AND
+        groups: {  }
+      exposed_block: true
+      use_ajax: true
+      sorts:
+        number:
+          id: number
+          table: search_api_index_products
+          field: number
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: true
+          expose:
+            label: 'Price High to Low'
+          plugin_id: search_api
+        number_1:
+          id: number_1
+          table: search_api_index_products
+          field: number
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: true
+          expose:
+            label: 'Price Low to High'
+          plugin_id: search_api
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'url.query_args:sort_by'
+      tags:
+        - 'config:field.storage.commerce_product.field_brand'
+        - 'config:search_api.index.products'
+  page_3:
+    display_plugin: page
+    id: page_3
+    display_title: 'Page 3'
+    position: 3
+    display_options:
+      display_extenders: {  }
+      filters:
+        search_api_fulltext:
+          id: search_api_fulltext
+          table: search_api_index_products
+          field: search_api_fulltext
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: and
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: search_api_fulltext_op
+            label: ''
+            description: ''
+            use_operator: false
+            operator: search_api_fulltext_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: product
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: 'Search for products'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          parse_mode: terms
+          min_length: null
+          fields: {  }
+          plugin_id: search_api_fulltext
+      defaults:
+        filters: false
+        filter_groups: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      path: categories
+      exposed_block: true
     cache_metadata:
       max-age: -1
       contexts:

@@ -30,6 +30,8 @@
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drupal/facets": "^1.6",
+        "drupal/facets_pretty_paths": "^1.0",
+        "drupal/jsonapi_extras": "^3.16",
         "drupal/mobile_number": "^1.0@alpha",
         "drupal/paragraphs": "^1.12",
         "drupal/physical": "^1.1",

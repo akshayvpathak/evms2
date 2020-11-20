@@ -11,6 +11,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Component\Utility\Xss;
 use Drupal\node\Entity\Node;
 use Drupal\Component\Render\MarkupInterface;
+use Drupal\Core\Url;
 
 /**
  * Implements hook_preprocess_HOOK() for HTML document templates.
@@ -267,6 +268,25 @@ function evms_preprocess_commerce_product_variation__product_variaton_teaser(&$v
   $variables['is_mobile'] = $is_mobile;
 }
 function evms_form_alter(&$form, &$form_state, $form_id) {
+  //sort form start
+  $path = Url::fromRoute('<current>')->toString();
+  $pathwithparam = Url::fromRoute('<current>', [], ['query' => \Drupal::request()->query->all()])->toString();
+  $query_str = parse_url($pathwithparam, PHP_URL_QUERY);
+  parse_str($query_str, $query_params);;
+  if($form['#id'] == 'views-exposed-form-categories-page-2'){
+    $form ['#action'] = $path;
+    /*
+    if (isset($query_params[product]))
+      {
+        $form ['#action'] = $pathwithparam;
+      }
+    else
+      {
+        $form ['#action'] = $path;
+      }
+      */
+  }
+  //end
   $detect = new Mobile_Detect;
   $is_mobile = $detect->isMobile();
   if(isset($form['#attributes']['class']) && in_array('commerce-order-item-variation-cart-form-form', $form['#attributes']['class']) && $is_mobile==1){
