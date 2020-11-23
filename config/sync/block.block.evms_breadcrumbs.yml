@@ -11,7 +11,7 @@ _core:
 id: evms_breadcrumbs
 theme: evms
 region: breadcrumb
-weight: -10
+weight: -11
 provider: null
 plugin: system_breadcrumb_block
 settings:

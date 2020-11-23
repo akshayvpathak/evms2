@@ -11,8 +11,8 @@ dependencies:
     - evms
 id: exposedformcategoriespage_2
 theme: evms
-region: breadcrumb
-weight: -9
+region: sort_by_block
+weight: -10
 provider: null
 plugin: 'views_exposed_filter_block:categories-page_2'
 settings:

@@ -124,6 +124,28 @@ div#accordion > div {
   background: #125688;
   color: white; }
 
+#categories_page .breadcrumb {
+  background-color: transparent; }
+  #categories_page .breadcrumb a {
+    color: #666;
+    font-size: 14px; }
+    #categories_page .breadcrumb a:hover, #categories_page .breadcrumb a:focus, #categories_page .breadcrumb a:visited {
+      color: #666;
+      text-decoration: none; }
+
+#categories_page .breadcrumb-item + .breadcrumb-item::before {
+  color: #666666;
+  content: ">"; }
+
+.sort_by_block label {
+  color: #666;
+  font-size: 14px; }
+
+.sort_by_block select {
+  border: 1px solid #dbdbdb;
+  color: #E96125;
+  padding: 3px; }
+
 .commerce-product--full .product-name {
   font-size: 24px; }
 

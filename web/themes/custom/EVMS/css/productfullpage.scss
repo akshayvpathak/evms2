@@ -18,6 +18,35 @@ $brightblue: #37A3BE;
   font-size: $fontsize;
   font-weight: $fontweight;
 }
+#categories_page{
+  .breadcrumb{
+    background-color: transparent;
+    a {
+      color: #666;
+      font-size: 14px;
+      &:hover ,&:focus ,&:visited{
+        color: #666;
+        text-decoration: none;
+      }
+    }
+  }
+  .breadcrumb-item+.breadcrumb-item::before{
+    color: $dimgray;
+    content: ">";
+  }
+  
+}
+.sort_by_block{
+  label{
+    color: #666;
+    font-size: 14px;
+  }
+  select{
+    border: 1px solid #dbdbdb;
+    color: #E96125;
+    padding: 3px;
+  }
+}
 .commerce-product--full{
   .product-name{
    font-size: $extrahighlightedtextDesk;

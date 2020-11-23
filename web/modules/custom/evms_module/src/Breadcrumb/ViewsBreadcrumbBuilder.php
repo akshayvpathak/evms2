@@ -42,7 +42,7 @@ class ViewsBreadcrumbBuilder implements BreadcrumbBuilderInterface {
     $breadcrumb = new \Drupal\Core\Breadcrumb\Breadcrumb();
     $breadcrumb->addCacheContexts(["url"]);
     $breadcrumb->addCacheTags(["view_id:{$parameters['view_id']}"]);
-    $breadcrumb->addLink(Link::createFromRoute($this->t('Home'), '<front>'));
+    //$breadcrumb->addLink(Link::createFromRoute($this->t('Home'), '<front>'));
     if (isset($parameters['view_id'])) {
       if ($parameters['view_id'] == 'categories') {
          $breadcrumb->addLink(Link::createFromRoute(t('Categories'), 'view.categories.page_1'));
