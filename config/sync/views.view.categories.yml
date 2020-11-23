@@ -7,7 +7,9 @@ dependencies:
     - search_api.index.products
   module:
     - better_exposed_filters
+    - rest
     - search_api
+    - serialization
     - views_bootstrap
 id: categories
 label: Categories
@@ -229,6 +231,7 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      use_ajax: false
     cache_metadata:
       max-age: -1
       contexts:
