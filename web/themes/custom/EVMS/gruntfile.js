@@ -74,6 +74,13 @@ module.exports = function(grunt)
             dest: 'vendor/font-awesome'
           },
           {
+            expand: true,
+            dot: true,
+            cwd: 'node_modules/jquery.easing',
+            src: ['*.min.js'],
+            dest: 'vendor/jquery.easing'
+          },
+          {
             //for slick-carousel
             expand: true,
             dot: true,
@@ -88,6 +95,13 @@ module.exports = function(grunt)
             cwd: 'node_modules/@icon/icofont',
             src: ['*.woff*','*.woff2','*.eot'],
             dest: 'vendor/icofont'
+          },
+          {
+            expand: true,
+            dot: true,
+            cwd: 'node_modules/animate.css',
+            src: ['*.min.css'],
+            dest: 'vendor/animate'
           },
           {
             //for ico fonts

@@ -3,10 +3,12 @@ base:
   js:
     vendor/bootstrap/js/bootstrap.bundle.min.js: {}
     vendor/slick/slick.min.js: {}
+    vendor/jquery.easing/jquery.easing.min.js: {}
     js/scripts.min.js: {}
   css:
     theme:
       css/custom.bootstrap.min.css: {}
+      vendor/animate/animate.min.css: {}
       css/styles.min.css: {}
   dependencies:
     - core/jquery

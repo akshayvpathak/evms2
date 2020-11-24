@@ -1,9 +1,21 @@
 jQuery(".viewless").hide();
-jQuery(window).on('load',function(){
-  jQuery('.loader').fadeIn(250);
+//preloader
+jQuery(window).on('load', function() {
+  if (jQuery('#preloader').length) {
+    jQuery('#preloader').delay(100).fadeOut('slow', function() {
+      jQuery(this).remove();
+    });
+  }
 });
+jQuery(window).scroll(function() {
+  if (jQuery(this).scrollTop() > 100) {
+    jQuery('.back-to-top').fadeIn('slow');
+  } else {
+    jQuery('.back-to-top').fadeOut('slow');
+  }
+});
+
 jQuery(document).ready(function(){
-  jQuery('.loader').fadeOut(250);
   jQuery(".productfeatures").hide(1000);
   jQuery(".viewmore").click(function(){
   jQuery(".productfeatures").show(1000);
@@ -15,6 +27,13 @@ jQuery(document).ready(function(){
     jQuery(".productfeatures").hide(1000);
     jQuery(".viewless").hide(1000);
     jQuery(".viewmore").show();
+  });
+  jQuery('.back-to-top').click(function() {
+    console.log('back to top clicked');
+    jQuery('html, body').animate({
+      scrollTop: 0
+    }, 1500, 'easeInOutExpo');
+    return false;
   });
   jQuery('.product-carousel').slick({
     infinite: true,
@@ -98,7 +117,8 @@ jQuery('.commerce-order-item-variation-cart-form-form').submit(function(event){
   event.preventDefault(); //prevent default action 
   var post_url = jQuery(this).attr("action"); //get form action url
 	var request_method = jQuery(this).attr("method"); //get form GET/POST method
-	var form_data = jQuery(this).serialize(); //Encode form elements for submission
+  var form_data = jQuery(this).serialize(); //Encode form elements for submission
+  jQuery('.loader').fadeIn(250);
 	jQuery.ajax({
 		url : post_url,
 		type: request_method,
@@ -106,11 +126,12 @@ jQuery('.commerce-order-item-variation-cart-form-form').submit(function(event){
 	}).done(function(response){
     Drupal.cartFlyout.fetchCarts();
     Drupal.cartFlyout.flyoutOffcanvasToggle();
+    jQuery('.loader').fadeOut(250);
 	});
 });
 jQuery(document).ajaxSend(function(){
-  jQuery('.loader').fadeIn(250);
+  console.log('AJAX SEND');
 });
 jQuery(document).ajaxComplete(function(){
-  jQuery('.loader').fadeOut(250);
+  console.log('AJAX Complete');
 });
