@@ -18,6 +18,26 @@ $brightblue: #37A3BE;
   font-size: $fontsize;
   font-weight: $fontweight;
 }
+
+.more_like_this{
+  .field__label{
+    color: #333;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 16px
+  }
+  .slick-slide img {
+    min-width: unset;
+    min-height: unset;
+    max-height: unset;
+}
+.variation-block{
+  position: relative;
+  border: 1px solid #eee;
+}
+}
+
 #categories_page{
   .breadcrumb{
     background-color: transparent;

@@ -11,6 +11,7 @@ dependencies:
     - field.field.commerce_product.grocery_type.field_images
     - field.field.commerce_product.grocery_type.field_key_features
     - field.field.commerce_product.grocery_type.field_marketed_by
+    - field.field.commerce_product.grocery_type.field_more_like_this
     - field.field.commerce_product.grocery_type.field_seller
     - field.field.commerce_product.grocery_type.field_shelf_life
     - field.field.commerce_product.grocery_type.field_unit
@@ -87,6 +88,18 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
+  field_more_like_this:
+    type: entity_reference_paragraphs
+    weight: 13
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
     region: content
   field_seller:
     weight: 9

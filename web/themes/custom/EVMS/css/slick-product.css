@@ -10,6 +10,9 @@
 }
 */
 /* Slider */
+.slick-list:focus {
+  outline: none; }
+
 .product-carousel .slick-prev,
 .product-carousel .slick-next {
   position: absolute;
@@ -78,6 +81,9 @@
   min-height: 1px;
   background-color: white;
   display: none; }
+  .product-carousel .slick-slide:focus,
+  .product-carousel .slick-slide a {
+    outline: none; }
   [dir="rtl"] .product-carousel .slick-slide {
     float: right; }
   .product-carousel .slick-slide img {

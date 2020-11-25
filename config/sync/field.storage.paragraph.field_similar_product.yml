@@ -1,0 +1,23 @@
+uuid: e5e7b7ba-d979-41f5-be02-363d70232fa7
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - dynamic_entity_reference
+    - paragraphs
+id: paragraph.field_similar_product
+field_name: field_similar_product
+entity_type: paragraph
+type: dynamic_entity_reference
+settings:
+  exclude_entity_types: false
+  entity_type_ids:
+    commerce_product_variation: commerce_product_variation
+module: dynamic_entity_reference
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

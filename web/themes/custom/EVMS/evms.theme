@@ -297,7 +297,11 @@ function evms_preprocess_paragraph__banner(&$variables){
   $variables['attributes']['class'][] = 'slick-banner';
   $variables['attributes']['class'][] = 'bg-white';
   $variables['attributes']['class'][] = 'overflow-hidden';
-
+}
+function evms_preprocess_paragraph__more_like_this(&$variables){
+  $variables['attributes']['class'][] = 'more-like-this';
+  $variables['attributes']['class'][] = 'bg-white';
+  $variables['attributes']['class'][] = 'overflow-hidden';
 }
 function evms_preprocess_paragraph__categories(&$variables){
   $variables['attributes']['class'][] = 'slick-categories';

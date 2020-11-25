@@ -185,6 +185,22 @@ div#accordion > div {
   background: #125688;
   color: white; }
 
+.more_like_this .field__label {
+  color: #333;
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 16px; }
+
+.more_like_this .slick-slide img {
+  min-width: unset;
+  min-height: unset;
+  max-height: unset; }
+
+.more_like_this .variation-block {
+  position: relative;
+  border: 1px solid #eee; }
+
 #categories_page .breadcrumb {
   background-color: transparent; }
   #categories_page .breadcrumb a {

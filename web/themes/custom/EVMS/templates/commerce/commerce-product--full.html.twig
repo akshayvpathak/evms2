@@ -63,7 +63,7 @@
           <a class="viewmore" role="button">View More  <span><i class="fa fa-angle-down"></i></span></a>
           </center>
           <div class= "productfeatures">
-          {{- product|without('field_images','variation_field_old_price','field_key_features','variations','field_image','variation_attributes','variation_price','variation_field_image','variation_title','variation_field_discount_percentage') -}}
+          {{- product|without('field_images','field_more_like_this','variation_field_old_price','field_key_features','variations','field_image','variation_attributes','variation_price','variation_field_image','variation_title','variation_field_discount_percentage') -}}
           </div>
           <center>
           <a class="viewless" role="button">
@@ -93,9 +93,11 @@
             <p class="promise-text text-darkcharcoal">Get difference refunded if you find it cheaper anywhere else.</p>
             </div>
           </div>
-        </div>
-          
-    </div>  
+        </div>     
+      </div>  
+      <div class="more_like_this">
+       {{- product.field_more_like_this -}}
+      </div>
   </article>
   
   

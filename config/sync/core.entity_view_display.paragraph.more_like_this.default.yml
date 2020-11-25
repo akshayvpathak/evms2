@@ -1,0 +1,91 @@
+uuid: 9535f3b1-a6f2-4d6d-9ded-0671edf39a39
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.more_like_this.field_similar_product
+    - paragraphs.paragraphs_type.more_like_this
+  module:
+    - dynamic_entity_reference
+id: paragraph.more_like_this.default
+targetEntityType: paragraph
+bundle: more_like_this
+mode: default
+content:
+  field_similar_product:
+    weight: 0
+    label: hidden
+    settings:
+      commerce_product_variation:
+        view_mode: product_variaton_teaser
+      comment:
+        view_mode: default
+        link: false
+      contact_message:
+        view_mode: default
+        link: false
+      node:
+        view_mode: default
+        link: false
+      block_content:
+        view_mode: default
+        link: false
+      menu_link_content:
+        view_mode: default
+        link: false
+      file:
+        view_mode: default
+        link: false
+      commerce_log:
+        view_mode: default
+        link: false
+      media:
+        view_mode: default
+        link: false
+      commerce_order:
+        view_mode: default
+        link: false
+      commerce_order_item:
+        view_mode: default
+        link: false
+      paragraph:
+        view_mode: default
+        link: false
+      commerce_payment:
+        view_mode: default
+        link: false
+      commerce_payment_method:
+        view_mode: default
+        link: false
+      commerce_product:
+        view_mode: default
+        link: false
+      commerce_product_attribute_value:
+        view_mode: default
+        link: false
+      profile:
+        view_mode: default
+        link: false
+      search_api_task:
+        view_mode: default
+        link: false
+      shortcut:
+        view_mode: default
+        link: false
+      commerce_store:
+        view_mode: default
+        link: false
+      taxonomy_term:
+        view_mode: default
+        link: false
+      path_alias:
+        view_mode: default
+        link: false
+      user:
+        view_mode: default
+        link: false
+    third_party_settings: {  }
+    type: dynamic_entity_reference_entity_view
+    region: content
+hidden:
+  search_api_excerpt: true

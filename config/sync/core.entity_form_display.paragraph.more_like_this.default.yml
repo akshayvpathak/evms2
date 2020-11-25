@@ -1,0 +1,23 @@
+uuid: 46fc49b8-5317-4dfd-8002-3b6fcb91cf89
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.more_like_this.field_similar_product
+    - paragraphs.paragraphs_type.more_like_this
+  module:
+    - dynamic_entity_reference
+id: paragraph.more_like_this.default
+targetEntityType: paragraph
+bundle: more_like_this
+mode: default
+content:
+  field_similar_product:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: dynamic_entity_reference_options_select
+    region: content
+hidden:
+  created: true
+  status: true

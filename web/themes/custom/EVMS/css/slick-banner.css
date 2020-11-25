@@ -91,10 +91,10 @@
   content: "\ea6c"; }
 
 .slick-next {
-  right: 12px; }
+  right: 18px; }
 
 [dir=rtl] .slick-next {
-  left: 12px;
+  left: 18px;
   right: auto; }
 
 .slick-next:before {
@@ -261,7 +261,7 @@
   .slick-prev {
     left: 2px; }
   .slick-next {
-    right: 2px; }
+    right: 9px; }
   .slick-prev,
   .slick-next {
     font-size: 1.3em; } }

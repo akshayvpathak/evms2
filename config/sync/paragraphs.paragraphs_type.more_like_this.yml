@@ -1,0 +1,10 @@
+uuid: b42806fb-1562-4198-a4c2-db49a37b9ae4
+langcode: en
+status: true
+dependencies: {  }
+id: more_like_this
+label: 'More Like This'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

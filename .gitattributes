@@ -52,7 +52,6 @@
 *.ico     -text diff
 *.jpeg    -text diff
 *.jpg     -text diff
-*.webp 	  -text diff
 *.otf     -text diff
 *.phar    -text diff
 *.png     -text diff

@@ -46,6 +46,40 @@ jQuery(document).ready(function(){
     variableWidth: false,
     speed: 1000
   });
+  jQuery('.more-like-this').slick({
+        infinite: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        autoplay: false,
+        autoplayspeed: 1000,
+        variableWidth: false,
+        speed: 500,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          }
+        ]
+  });
   jQuery('.slick-banner').slick({
     infinite: true,
     slidesToShow: 1,
