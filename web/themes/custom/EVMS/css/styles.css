@@ -119,6 +119,24 @@ div.slick-categories {
   .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1320px; } }
 
+.easy-autocomplete {
+  width: 100% !important;
+  border: 1px solid #dee2e6 !important; }
+  .easy-autocomplete input {
+    background-image: url(http://easyautocomplete.com/images/icon_search.png);
+    background-repeat: no-repeat;
+    background-position: right 10px center; }
+  .easy-autocomplete a {
+    text-decoration: none; }
+    .easy-autocomplete a:hover, .easy-autocomplete a:focus {
+      text-decoration: none; }
+  .easy-autocomplete .prod-name {
+    color: #666;
+    font-size: 14px; }
+  .easy-autocomplete .prod-cat {
+    color: #37A3BE;
+    font-size: 14px; }
+
 div#accordion > div {
   margin-top: 10px;
   margin-bottom: 10px;

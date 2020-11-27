@@ -1,0 +1,24 @@
+.easy-autocomplete
+{
+  input {
+    background-image: url(http://easyautocomplete.com/images/icon_search.png);
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+  }
+  a{
+    text-decoration: none;
+    &:hover ,&:focus{
+      text-decoration: none;
+    }
+  }
+  width: 100% !important;
+  border: 1px solid #dee2e6!important;
+  .prod-name{
+    color: #666;
+    font-size: 14px;
+  }
+  .prod-cat{
+    color:  #37A3BE;
+    font-size: 14px;
+  }
+} 

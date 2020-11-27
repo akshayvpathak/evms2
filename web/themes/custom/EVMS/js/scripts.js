@@ -14,6 +14,37 @@ jQuery(window).scroll(function() {
     jQuery('.back-to-top').fadeOut('slow');
   }
 });
+//autocomplete
+jQuery( "#template-custom" ).on( "focus", function() {
+  console.log("here");
+  jQuery(this).css("background-image","none");
+});
+jQuery("#template-custom").focusout(function(){
+  jQuery(this).css("background-image","url(http://easyautocomplete.com/images/icon_search.png)");
+});
+var options = {
+  data: [ {name: "Onion",description: "vegetables", icon: "https://master-7rqtwti-apsxsjiaatmum.us-2.platformsh.site/sites/default/files/2020-11/product1.jpg", websitelink: "/categories?product=onion",},
+    {name: "Rice" ,description: "Grocery & Staples", icon: "https://master-7rqtwti-apsxsjiaatmum.us-2.platformsh.site/sites/default/files/2020-11/product21.jpg", websitelink: "/categories?product=rice"},
+    {name: "Tomato",description: "vegetables", icon: "https://master-7rqtwti-apsxsjiaatmum.us-2.platformsh.site/sites/default/files/2020-11/tomato2.png", websitelink: "/categories?product=tomato"},
+    {name: "Ginger",description: "vegetables", icon: "https://master-7rqtwti-apsxsjiaatmum.us-2.platformsh.site/sites/default/files/2020-11/ginger2.png",websitelink: "/categories?product=ginger"},
+    {name: "Lemon",description: "vegetables", icon: "https://master-7rqtwti-apsxsjiaatmum.us-2.platformsh.site/sites/default/files/2020-11/lemon2%20copy.png",websitelink: "/categories?product=lemon"},
+    {name: "Cucumber",description: "vegetables", icon: "https://master-7rqtwti-apsxsjiaatmum.us-2.platformsh.site/sites/default/files/2020-11/cucumber2.png",websitelink: "/categories?product=cucumber"},
+    {name: "Vegetables & Fruits",description: "Categories", icon: "https://master-7rqtwti-apsxsjiaatmum.us-2.platformsh.site/sites/default/files/2020-11/tomato2.png",websitelink: "/categories/cid/vegetables-fruits-2"},
+    {name: "Grocery & Staples",description: "Categories", icon: "https://master-7rqtwti-apsxsjiaatmum.us-2.platformsh.site/sites/default/files/2020-11/product21.jpg",websitelink: "/categories/cid/grocery-staples-5"},],
+  getValue: "name",
+  list: {
+    match: {
+      enabled: true
+    }
+  },
+  template: {
+    type: "custom",
+    method: function(value, item) {
+      return "<a class='text-left' href='" + item.websitelink+ "'> <img src='" + item.icon + "' height='45' width='45' /><p class='d-inline prod-name'>  "+ value +" in </p><p class='d-inline prod-cat'>  "+ item.description +" </p></a>";
+    }
+  }
+};
+jQuery("#template-custom").easyAutocomplete(options);
 
 jQuery(document).ready(function(){
   jQuery(".productfeatures").hide(1000);

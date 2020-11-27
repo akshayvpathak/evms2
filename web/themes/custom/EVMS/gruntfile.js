@@ -89,6 +89,14 @@ module.exports = function(grunt)
             dest: 'vendor/slick'
           },
           {
+            //for auto complete
+            expand: true,
+            dot: true,
+            cwd: 'node_modules/easy-autocomplete/dist',
+            src: ['*.min.js','*.min.css'],
+            dest: 'vendor/easy-autocomplete'
+          },
+          {
             //for ico fonts
             expand: true,
             dot: true,

@@ -13,6 +13,10 @@
 .slick-list:focus {
   outline: none; }
 
+.more-like-this .slick-slide:focus,
+.more-like-this .slick-slide a {
+  outline: none; }
+
 .product-carousel .slick-prev,
 .product-carousel .slick-next {
   position: absolute;
