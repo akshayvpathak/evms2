@@ -20,7 +20,7 @@ jQuery( "#template-custom" ).on( "focus", function() {
   jQuery(this).css("background-image","none");
 });
 jQuery("#template-custom").focusout(function(){
-  jQuery(this).css("background-image","url(http://easyautocomplete.com/images/icon_search.png)");
+  jQuery(this).css("background-image","url(https://master-7rqtwti-apsxsjiaatmum.us-2.platformsh.site/sites/default/files/2020-11/icon_search.png)");
 });
 var options = {
   data: [ {name: "Onion",description: "vegetables", icon: "https://master-7rqtwti-apsxsjiaatmum.us-2.platformsh.site/sites/default/files/2020-11/product1.jpg", websitelink: "/categories?product=onion",},
