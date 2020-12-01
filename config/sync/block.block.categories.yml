@@ -24,6 +24,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/cart\r\n/checkout/*\r\n/user/*"
-    negate: true
+    pages: "/categories\r\n/categories/*\r\n\r\n"
+    negate: false
     context_mapping: {  }
