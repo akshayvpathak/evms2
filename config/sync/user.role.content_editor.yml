@@ -7,10 +7,12 @@ label: 'Content Editor'
 weight: 3
 is_admin: null
 permissions:
+  - 'access administration pages'
   - 'access commerce administration pages'
   - 'access commerce_order overview'
   - 'access commerce_product overview'
   - 'access commerce_product_attribute overview'
+  - 'access site in maintenance mode'
   - 'add commerce_log commerce_order admin comment'
   - 'administer commerce_checkout_flow'
   - 'administer commerce_order'
@@ -21,6 +23,9 @@ permissions:
   - 'administer commerce_tax_type'
   - 'administer media'
   - 'administer media types'
+  - 'administer menu'
+  - 'administer modules'
+  - 'administer themes'
   - 'create commerce_product_attribute'
   - 'create default commerce_order'
   - 'create default commerce_product'
@@ -67,3 +72,4 @@ permissions:
   - 'view online commerce_store'
   - 'view own commerce_order'
   - 'view own unpublished commerce_product'
+  - 'view the administration theme'
