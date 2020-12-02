@@ -38,6 +38,7 @@
         "drupal/physical": "^1.1",
         "drupal/redis": "^1.4",
         "drupal/search_api": "^1.18",
+        "drupal/super_login": "^1.6",
         "drupal/swiftmailer": "^2.0@beta",
         "drupal/views_bootstrap": "^4.3",
         "drupal/views_taxonomy_term_name_into_id": "^1.0@alpha",
