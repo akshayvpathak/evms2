@@ -1,0 +1,16 @@
+<?php
+function evms_login_theme($existing, $type, $theme, $path) {
+  return [
+    'evms_login_block' => [
+      'variables' => [
+        'login_link' =>NULL,
+        'logout_link' =>NULL,
+        'signin_link' => NULL,
+        'address_link' => NULL,
+        'order_link' => NULL,
+        'title' => NULL,
+        'overridden' => FALSE,
+      ],
+    ],
+  ];
+}

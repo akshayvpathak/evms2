@@ -20,6 +20,9 @@ svg.loader {
   margin: 20px;
   display: inline-block; }
 
+.form-group {
+  margin-bottom: 0px; }
+
 /* Prelaoder */
 #preloader {
   position: fixed;
@@ -150,6 +153,9 @@ input#edit-pass, input#edit-name {
 p.forgot-password {
   text-align: right; }
 
+.add-address .form-group, edit-address .form-group {
+  margin-bottom: 1rem; }
+
 .easy-autocomplete {
   width: 100% !important;
   border: 1px solid #dee2e6 !important; }
@@ -262,15 +268,6 @@ div#accordion > div {
 #categories_page .breadcrumb-item + .breadcrumb-item::before {
   color: #666666;
   content: ">"; }
-
-.sort_by_block label {
-  color: #666;
-  font-size: 14px; }
-
-.sort_by_block select {
-  border: 1px solid #dbdbdb;
-  color: #E96125;
-  padding: 3px; }
 
 .commerce-product--full .product-name {
   font-size: 24px; }
@@ -627,3 +624,15 @@ body.toolbar-fixed.toolbar-tray-open .cart-offcanvas {
     padding: 8px 10px; }
     .evms-mobile-nav a:hover {
       text-decoration: none; }
+
+.path-categories .main-content {
+  background-color: #fff; }
+
+.sort_by_block label {
+  color: #666;
+  font-size: 14px; }
+
+.sort_by_block select {
+  border: 1px solid #dbdbdb;
+  color: #E96125;
+  padding: 3px; }

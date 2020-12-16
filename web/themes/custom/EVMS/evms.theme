@@ -239,7 +239,7 @@ function evms_preprocess_page(&$variables) {
     'role' => ['main'],
   ];
   $variables['sidebar_first_attributes'] = [
-    'class' => ['sidebar_first', 'sidebar', $sidebar_first_width],
+    'class' => ['sidebar_first', 'sidebar', $sidebar_first_width,'bg-white'],
     'id' => ['sidebar_first'],
   ];
   $variables['sidebar_second_attributes'] = [
@@ -268,6 +268,21 @@ function evms_preprocess_commerce_product_variation__product_variaton_teaser(&$v
   $variables['is_mobile'] = $is_mobile;
 }
 function evms_form_alter(&$form, &$form_state, $form_id) {
+  //dpm($form_id);
+  if($form_id == 'profile_customer_address-book-edit_form'){
+    $form['title'] = [
+      '#markup' => '<p class="login-title"> Edit Address</p>',
+      '#weight' => -100,
+    ];
+    $form['#attributes']['class'] = 'col-md-6 offset-md-3 border mt-3 pt-3 pb-3 edit-address';
+  }
+  if($form_id == 'profile_customer_address-book-add_form'){
+    $form['title'] = [
+      '#markup' => '<p class="login-title"> Add Address</p>',
+      '#weight' => -100,
+    ];
+    $form['#attributes']['class'] = 'col-md-6 offset-md-3 border mt-3 pt-3 pb-3 add-address';
+  }
   if($form_id == 'user_login_form'){
     $form['#attributes']['class'] = 'col-md-6 offset-md-3 border mt-3 pt-3';
   }
@@ -279,9 +294,6 @@ function evms_form_alter(&$form, &$form_state, $form_id) {
     $form['#attributes']['class'] = 'col-md-6 offset-md-3 border mt-3 pt-3';
   }
   if($form_id == 'user_pass'){
-    $form['#attributes']['class'] = 'col-md-6 offset-md-3 border mt-3 pt-3';
-  }
-  if($form_id == 'profile_customer_address-book-add_form'){
     $form['#attributes']['class'] = 'col-md-6 offset-md-3 border mt-3 pt-3';
   }
   //sort form start

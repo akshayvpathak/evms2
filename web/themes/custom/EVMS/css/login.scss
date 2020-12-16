@@ -31,3 +31,8 @@ input#edit-pass,input#edit-name{
 p.forgot-password{
   text-align: right;
 }
+.add-address, edit-address{
+  .form-group{
+    margin-bottom: 1rem;
+  }
+}

@@ -10,37 +10,48 @@
           <div class="col-md-6  py-2 px-3 text-center">
             {{ page.product_search }}
           </div>
+            <div class="col-md-2  py-2 px-3 text-center">
+            {{ page.account_block }}
+          </div>
           <div class="col-md-2  py-2 px-3 text-center">
             {{ page.cart_block }}
           </div>
-          <div class="col-md-2  py-2 px-3 text-center">
-            {{ page.account_block }}
-          </div>
+        
       </div>
       {% endblock %}
     </header>
     #}
-    <nav class="navbar navbar-dark navbar-expand-sm bg-light container-fluid py-0">
-            <button class="navbar-toggler bg-evms-submit" type="button" data-toggle="collapse" data-target="#Navbar">
-                <span class="fa fa-lg fa-bars text-light"></span>
-            </button>
-            <div class="py-1 px-3 text-center">
-            {{ page.site_branding }}
-            </div>
-            <div class="collapse navbar-collapse" id ="Navbar">
-                  <div class="col-md-7  pb-1 px-3  pt-4 text-center">
-                    {{ page.product_search }}
-                  </div>
-                  <div class="col-md-2  py-1 px-3 text-center">
-                    {{ page.cart_block }}
-                  </div>
-                  <div class="col-md-3  py-1 px-3 text-center">
-                    {{ page.account_block }}
-                  </div>
-            </div>
+    <nav class="navbar navbar-dark navbar-expand-sm bg-light container-fluid py-0 ">
+      <button class="navbar-toggler bg-evms-submit" type="button" data-toggle="collapse" data-target="#Navbar">
+        <span class="fa fa-lg fa-bars text-light"></span>
+      </button>
+      <button class="btn d-md-none d-xl-none" type="button" data-toggle="collapse" data-target="#seachbar" aria-expanded="false" aria-controls="seachbar">
+        <i class="icofont icofont-search-1"></i>
+      </button>
+      <div class="py-1 px-3 text-center">
+        {{ page.site_branding }}
+      </div>
+
+      <div class="py-1 px-3 d-md-none d-xl-none">
+          {{ page.cart_block }}
+        </div>
+      <div class="collapse navbar-collapse" id="Navbar">
+        <div class="col-md-7  pb-1 pr-3  mt-2 d-none d-md-block d-xl-block">
+          {{ page.product_search }}
+        </div>
+         <div class="col-md-2  py-1 px-3">
+          {{ page.account_block }}
+        </div>
+        <div class="col-md-3  py-1 px-3 d-none d-md-block d-xl-block">
+          {{ page.cart_block }}
+        </div>
+      </div>
     </nav>
+    <div class="collapse container" id="seachbar">
+      {{ page.product_search }}
+    </div>
     {% if page.highlighted %}
-      <div class="highlighted">
+      <div class="highlighted mt-2">
         <aside class="{{ container }} section clearfix" role="complementary">
           {{ page.highlighted }}
         </aside>

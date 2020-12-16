@@ -49,11 +49,11 @@ jQuery(window).scroll(function() {
   }
 });
 //autocomplete
-jQuery( "#template-custom" ).on( "focus", function() {
+jQuery("[id = 'template-custom']").on( "focus", function() {
   console.log("here");
   jQuery(this).css("background-image","none");
 });
-jQuery("#template-custom").focusout(function(){
+jQuery("[id = 'template-custom']").focusout(function(){
   jQuery(this).css("background-image","url(https://master-7rqtwti-apsxsjiaatmum.us-2.platformsh.site/sites/default/files/2020-11/icon_search.png)");
 });
 var options = {
@@ -78,7 +78,7 @@ var options = {
     }
   }
 };
-jQuery("#template-custom").easyAutocomplete(options);
+jQuery("[id = 'template-custom']").easyAutocomplete(options);
 
 jQuery(document).ready(function(){
   jQuery(".productfeatures").hide(1000);

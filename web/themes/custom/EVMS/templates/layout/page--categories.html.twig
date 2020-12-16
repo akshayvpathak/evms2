@@ -20,27 +20,37 @@
       {% endblock %}
     </header>
     #}
-    <nav class="navbar navbar-dark navbar-expand-sm bg-light container-fluid py-0">
+    <nav class="navbar navbar-dark navbar-expand-sm bg-light container-fluid py-0 ">
       <button class="navbar-toggler bg-evms-submit" type="button" data-toggle="collapse" data-target="#Navbar">
         <span class="fa fa-lg fa-bars text-light"></span>
+      </button>
+      <button class="btn d-md-none d-xl-none" type="button" data-toggle="collapse" data-target="#seachbar" aria-expanded="false" aria-controls="seachbar">
+        <i class="icofont icofont-search-1"></i>
       </button>
       <div class="py-1 px-3 text-center">
         {{ page.site_branding }}
       </div>
-      <div class="collapse navbar-collapse" id="Navbar">
-        <div class="col-md-7  pb-1 px-3  pt-4 text-center">
-          {{ page.product_search }}
-        </div>
-        <div class="col-md-2  py-1 px-3 text-center">
+
+      <div class="py-1 px-3 d-md-none d-xl-none">
           {{ page.cart_block }}
         </div>
-        <div class="col-md-3  py-1 px-3 text-center">
+      <div class="collapse navbar-collapse" id="Navbar">
+        <div class="col-md-7  pb-1 pr-3  mt-2 d-none d-md-block d-xl-block">
+          {{ page.product_search }}
+        </div>
+         <div class="col-md-2  py-1 px-3">
           {{ page.account_block }}
+        </div>
+        <div class="col-md-3  py-1 px-3 d-none d-md-block d-xl-block">
+          {{ page.cart_block }}
         </div>
       </div>
     </nav>
+    <div class="collapse container" id="seachbar">
+      {{ page.product_search }}
+    </div>
     {% if page.highlighted %}
-      <div class="highlighted">
+      <div class="highlighted mt-2">
         <aside class="{{ container }} section clearfix" role="complementary">
           {{ page.highlighted }}
         </aside>
@@ -55,7 +65,7 @@
       </div>
     {% endblock %}
     {% endif %}
-    <div id="main-wrapper" class="layout-main-wrapper clearfix">
+    <div id="main-wrapper" class="layout-main-wrapper clearfix" style="background-color: #f9f9f9;">
       {% block content %}
       <div id="main" class="{{ container }}">
         <div class="row row-offcanvas row-offcanvas-left clearfix">
@@ -71,7 +81,7 @@
             <div class="col-md-6">
               {{ page.breadcrumb }}
             </div>
-            <div class="col-md-6 sort_by_block">
+            <div class="col-md-6 sort_by_block text-right align-self-center">
               {{ page.sort_by_block }}
             </div>
           </div>

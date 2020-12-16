@@ -1,0 +1,5 @@
+name: EVMS_LOGIN
+description: This is Login Module
+type: module
+core: 8.x
+package: Custom
